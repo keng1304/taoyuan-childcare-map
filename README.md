@@ -7,8 +7,14 @@
 
 ```bash
 python3 scripts/pipeline.py all   # 抓最新名冊 → 清洗 → geocode（有快取）→ GeoJSON
+python3 scripts/pipeline.py tycg && python3 scripts/pipeline.py enrich && python3 scripts/pipeline.py build
 # 前端：site/ 為純靜態，任何 http server 可跑
 ```
+
+## 部署
+
+GitHub Pages（Actions workflow）。已知限制：以 OAuth token push 不會觸發 push 事件的 workflow run，
+因此 push 後需補一手 `gh workflow run pages.yml`（或等每週一排程自動重佈）。
 
 `data/geocode_cache.json` 已入版控——clone 後不需要打任何 geocoding API 就能 build。
 

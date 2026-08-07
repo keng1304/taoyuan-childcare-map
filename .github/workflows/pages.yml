@@ -3,6 +3,8 @@ on:
   push:
     branches: [main]
   workflow_dispatch:
+  schedule:
+    - cron: "0 21 * * 0"   # 每週一 05:00 台北時間自動重佈（未來配資料自動更新）
 permissions:
   contents: read
   pages: write
