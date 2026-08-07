@@ -1,0 +1,32 @@
+{
+  "city": "桃園市",
+  "city_slug": "taoyuan",
+  "map": {
+    "center": [24.9937, 121.3009],
+    "zoom": 12,
+    "bounds": [[24.58, 120.98], [25.12, 121.48]]
+  },
+  "districts": ["桃園區", "中壢區", "平鎮區", "八德區", "楊梅區", "蘆竹區", "大溪區", "龜山區", "大園區", "觀音區", "新屋區", "復興區", "龍潭區"],
+  "data": {
+    "facilities": "../data/processed/facilities.geojson",
+    "source_label": "桃園市政府開放資料（政府資料開放授權條款 v1）",
+    "source_datasets": ["168379", "168385"]
+  },
+  "theme": {
+    "name": "mint-assure",
+    "primary": "#1f7a6d",
+    "primary_soft": "#e6f2f0",
+    "bg": "#f2f8f6",
+    "ink": "#173f38",
+    "muted": "#6b8680",
+    "timestamp_badge_bg": "#fcf3e2",
+    "timestamp_badge_fg": "#b97a0e",
+    "status": {
+      "open": "#1f7a6d",
+      "full": "#c94f43",
+      "stale": "#d98e32",
+      "comment": "圖釘狀態色=功能色，不隨 theme 換；色弱輔以形狀差異"
+    }
+  },
+  "demo_mode_default": false
+}

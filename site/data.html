@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>開放資料 — 桃園托育地圖</title>
+<style>
+body{font-family:"Noto Sans TC","PingFang TC",system-ui,sans-serif;background:#f2f8f6;color:#173f38;margin:0}
+header{background:#1f7a6d;color:#fff;padding:12px 16px;font-weight:800}
+header a{color:#d8ece8;text-decoration:none;font-size:13px;float:right;margin-top:2px}
+main{max-width:760px;margin:0 auto;padding:24px 18px 60px;line-height:1.85}
+h2{font-size:18px;margin:1.4em 0 .5em;color:#1f7a6d}
+p,li{font-size:14.5px;color:#3c5a53}
+a{color:#1f7a6d;font-weight:700}
+.dl{display:block;background:#fff;border:1.5px solid #d7e8e2;border-radius:12px;padding:.9em 1.1em;margin:.6em 0;text-decoration:none}
+.dl small{display:block;color:#6b8680;font-weight:400}
+code{background:#e6f2f0;border-radius:4px;padding:.1em .4em}
+</style>
+</head>
+<body>
+<header>開放資料<a href="index.html">← 回地圖</a></header>
+<main>
+  <h2>下載清洗後資料</h2>
+  <p>本站清洗、地理編碼後的資料集開放下載——資料本身也是公共財，歡迎再利用。</p>
+  <a class="dl" href="data/facilities.geojson" download>facilities.geojson<small>189 家托嬰中心（含座標、評鑑、月費、核定床位）・GeoJSON</small></a>
+  <a class="dl" href="data/missing.json" download>missing.json<small>5 家座標人工校正中的機構清單・JSON</small></a>
+
+  <h2>可重現的資料管線</h2>
+  <p>從官方 CSV 到本站資料的全流程開源：<code>python3 scripts/pipeline.py all</code> 一鍵重跑（下載 → Big5 轉碼 → 清洗 → 地理編碼（含快取）→ GeoJSON）。原始 CSV 快照帶日期戳保存，可追溯、防來源異動。</p>
+  <p>GitHub：<a href="#">repo 連結（開源後補上）</a></p>
+
+  <h2>給其他縣市</h2>
+  <p>本專案為白牌架構——縣市名稱、資料來源、地圖範圍、主題色都在 <code>site/config/</code> 設定檔。fork 後替換設定與資料來源欄位對應，即可建立你的縣市版本。</p>
+</main>
+</body>
+</html>

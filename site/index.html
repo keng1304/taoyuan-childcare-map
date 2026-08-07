@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+<title>桃園托育地圖</title>
+<link rel="stylesheet" href="vendor/leaflet.css">
+<style>
+:root{
+  --primary:#1f7a6d; --primary-soft:#e6f2f0; --bg:#f2f8f6; --ink:#173f38;
+  --ink2:#3c5a53; --muted:#6b8680; --line:#d7e8e2; --card:#ffffff;
+  --amber-bg:#fcf3e2; --amber:#b97a0e;
+  --st-open:#1f7a6d; --st-full:#c94f43; --st-stale:#d98e32;
+}
+*{margin:0;padding:0;box-sizing:border-box}
+html,body{height:100%}
+body{font-family:"Noto Sans TC","PingFang TC","Microsoft JhengHei",system-ui,sans-serif;background:var(--bg);color:var(--ink);display:flex;flex-direction:column;overflow:hidden}
+header{background:var(--primary);color:#fff;padding:10px 14px;display:flex;align-items:center;gap:10px;z-index:1000}
+header h1{font-size:17px;font-weight:800;flex:1}
+header a{color:#d8ece8;font-size:12.5px;text-decoration:none;font-weight:700}
+#demoBanner{display:none;background:var(--amber-bg);color:var(--amber);font-size:12.5px;font-weight:700;text-align:center;padding:5px 10px;border-bottom:1px solid #eadfc2}
+body.demo #demoBanner{display:block}
+/* 工具列 */
+#tools{background:var(--card);border-bottom:1px solid var(--line);padding:8px 12px;display:flex;flex-wrap:wrap;gap:6px;align-items:center;z-index:900}
+.chip{border:1.5px solid var(--line);background:#fff;color:var(--ink2);border-radius:9px;padding:5px 11px;font-size:13px;font-weight:700;cursor:pointer;user-select:none}
+.chip.on{background:var(--primary);border-color:var(--primary);color:#fff}
+.chip.off{opacity:.45;cursor:not-allowed}
+.chip.demo-only{display:none}
+body.demo .chip.demo-only{display:inline-block}
+select{border:1.5px solid var(--line);border-radius:9px;padding:5px 8px;font-size:13px;color:var(--ink2);background:#fff;font-weight:700}
+#locBtn{margin-left:auto}
+/* 主區 */
+#main{flex:1;display:flex;min-height:0;position:relative}
+#map{flex:1;z-index:1}
+#list{display:none;width:340px;max-width:100%;overflow-y:auto;background:var(--bg);border-right:1px solid var(--line);padding:10px}
+body.showlist #list{display:block}
+.fcard{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:11px 13px;margin-bottom:9px;cursor:pointer;line-height:1.55}
+.fcard:hover{border-color:var(--primary)}
+.fcard .nm{font-weight:800;font-size:14.5px}
+.fcard .meta{font-size:12px;color:var(--muted)}
+.badges{display:flex;flex-wrap:wrap;gap:4px;margin:4px 0}
+.badges i{font-style:normal;font-weight:700;font-size:10.5px;border-radius:4px;padding:1px 6px}
+.b-grade{background:var(--primary-soft);color:var(--primary)}
+.b-quasi{background:#e8eef9;color:#3a5f9e}
+.b-ts{background:var(--amber-bg);color:var(--amber)}
+.b-open{background:#e2f1e8;color:var(--st-open)}
+.b-full{background:#f9e4e1;color:var(--st-full)}
+.b-stale{background:#f8ecd4;color:var(--st-stale)}
+.b-pending{background:#eee;color:#888}
+/* 底部抽屜（機構詳情） */
+#drawer{position:absolute;left:0;right:0;bottom:-100%;max-height:62%;background:var(--card);border-radius:18px 18px 0 0;box-shadow:0 -6px 24px rgba(23,63,56,.18);transition:bottom .25s;z-index:800;overflow-y:auto;padding:14px 16px calc(14px + env(safe-area-inset-bottom))}
+#drawer.open{bottom:0}
+#drawer .close{position:absolute;top:10px;right:14px;border:none;background:var(--primary-soft);color:var(--primary);border-radius:50%;width:28px;height:28px;font-size:15px;cursor:pointer;font-weight:800}
+#drawer h2{font-size:17px;font-weight:800;padding-right:36px}
+#drawer .row{font-size:13.5px;color:var(--ink2);margin:3px 0;line-height:1.6}
+#drawer .row b{color:var(--ink)}
+.cta{display:flex;gap:8px;margin-top:10px}
+.cta a{flex:1;text-align:center;border-radius:10px;padding:9px 0;font-size:14px;font-weight:800;text-decoration:none}
+.cta .call{background:var(--primary);color:#fff}
+.cta .nav{border:1.5px solid var(--primary);color:var(--primary)}
+.cta .share{border:1.5px solid var(--line);color:var(--muted)}
+/* 手機視圖切換鈕 */
+#viewToggle{position:absolute;top:12px;right:12px;z-index:700;background:var(--card);border:1.5px solid var(--line);border-radius:10px;font-size:13px;font-weight:800;color:var(--primary);padding:8px 12px;cursor:pointer;box-shadow:0 2px 8px rgba(23,63,56,.12)}
+#count{position:absolute;bottom:12px;left:12px;z-index:700;background:rgba(255,255,255,.92);border-radius:8px;font-size:12px;color:var(--ink2);padding:4px 10px;box-shadow:0 1px 6px rgba(23,63,56,.12)}
+footer{background:var(--card);border-top:1px solid var(--line);font-size:11px;color:var(--muted);padding:4px 12px;text-align:center}
+footer a{color:var(--primary)}
+@media(min-width:900px){
+  body.showlist #list, #list{display:block}
+  #viewToggle{display:none}
+}
+@media(max-width:899px){
+  #list{position:absolute;inset:0;width:100%;z-index:600;display:none}
+  body.showlist #list{display:block}
+}
+.leaflet-container{font:inherit}
+.pin-dot{border-radius:50%;border:2.5px solid #fff;box-shadow:0 1px 4px rgba(0,0,0,.35)}
+</style>
+</head>
+<body>
+<header>
+  <h1>桃園托育地圖</h1>
+  <a href="about.html">關於與資料來源</a>
+  <a href="data.html">開放資料</a>
+</header>
+<div id="demoBanner">⚠ 政策展示模式——空位為示意資料，僅呈現制度建置後樣貌，非即時資訊</div>
+<div id="tools">
+  <select id="fDistrict"><option value="">全部行政區</option></select>
+  <span class="chip on" data-type="">全部</span>
+  <span class="chip" data-type="公設民營">公設民營</span>
+  <span class="chip" data-type="私立">私立</span>
+  <span class="chip" id="fQuasi">準公共</span>
+  <span class="chip off" title="幼兒園圖層整合中（教育部資料源）">幼兒園（整合中）</span>
+  <select id="fGrade"><option value="">評鑑不限</option><option>優</option><option>甲</option><option>乙</option><option>丙</option></select>
+  <span class="chip demo-only" id="fVacancy">只看有空位</span>
+  <span class="chip" id="locBtn">📍 離我最近</span>
+</div>
+<div id="main">
+  <div id="list"></div>
+  <div id="map"></div>
+  <button id="viewToggle">☰ 清單</button>
+  <div id="count"></div>
+  <div id="drawer"><button class="close" onclick="closeDrawer()">×</button><div id="drawerBody"></div></div>
+</div>
+<footer>資料：桃園市政府開放資料（dataset 168379，2026-08-06 擷取）｜地圖 © OpenStreetMap 貢獻者｜<a href="about.html">資料誠實原則</a></footer>
+<script src="vendor/leaflet.js"></script>
+<script>
+const DEMO = new URLSearchParams(location.search).get('demo') === '1';
+if (DEMO) document.body.classList.add('demo');
+const state = { district:'', type:'', quasi:false, grade:'', vacancyOnly:false, userLoc:null };
+let facilities = [], missing = [], markers = {}, map;
+
+// —— demo 示意空位：以 id 決定、確定性（同一機構每次一樣），明標示意 ——
+function demoVacancy(id){
+  let h = 0; for (const c of id) h = (h*31 + c.charCodeAt(0)) >>> 0;
+  const r = h % 100;
+  if (r < 12) return { status:'stale', hours: 24*30 + h%200 };
+  if (r < 47) return { status:'full', hours: 1 + h%70 };
+  return { status:'open', slots: 1 + h%6, from: ['2026-09','2026-10','2026-11','2027-01'][h%4], hours: 1 + h%48 };
+}
+const stColor = { open:'#1f7a6d', full:'#c94f43', stale:'#d98e32' };
+
+init();
+async function init(){
+  const cfg = await (await fetch('config/taoyuan.json')).json();
+  map = L.map('map', { zoomControl:false }).setView(cfg.map.center, cfg.map.zoom);
+  L.control.zoom({ position:'bottomright' }).addTo(map);
+  L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png',
+    { attribution:'© OpenStreetMap', maxZoom:19 }).addTo(map);
+  cfg.districts.forEach(d => fDistrict.add(new Option(d, d)));
+  const gj = await (await fetch('data/facilities.geojson')).json();
+  facilities = gj.features.map(f => ({ ...f.properties, lat:f.geometry.coordinates[1], lon:f.geometry.coordinates[0] }));
+  missing = await (await fetch('data/missing.json')).json();
+  bindTools();
+  render();
+  if (location.hash.length > 1) openById(decodeURIComponent(location.hash.slice(1)));
+}
+
+function bindTools(){
+  fDistrict.onchange = () => { state.district = fDistrict.value; render(); };
+  fGrade.onchange = () => { state.grade = fGrade.value; render(); };
+  document.querySelectorAll('.chip[data-type]').forEach(c => c.onclick = () => {
+    document.querySelectorAll('.chip[data-type]').forEach(x => x.classList.remove('on'));
+    c.classList.add('on'); state.type = c.dataset.type; render();
+  });
+  fQuasi.onclick = () => { state.quasi = !state.quasi; fQuasi.classList.toggle('on'); render(); };
+  fVacancy.onclick = () => { state.vacancyOnly = !state.vacancyOnly; fVacancy.classList.toggle('on'); render(); };
+  locBtn.onclick = () => navigator.geolocation?.getCurrentPosition(p => {
+    state.userLoc = [p.coords.latitude, p.coords.longitude];
+    map.setView(state.userLoc, 14);
+    L.circleMarker(state.userLoc, { radius:7, color:'#3a5f9e', fillOpacity:.9 }).addTo(map).bindTooltip('你的位置');
+    render();
+  }, () => alert('無法取得定位，請改用行政區篩選'));
+  viewToggle.onclick = () => {
+    document.body.classList.toggle('showlist');
+    viewToggle.textContent = document.body.classList.contains('showlist') ? '🗺 地圖' : '☰ 清單';
+  };
+}
+
+function pass(f){
+  if (state.district && f.district !== state.district) return false;
+  if (state.type && f.type !== state.type) return false;
+  if (state.quasi && !f.quasi_public) return false;
+  if (state.grade && f.grade !== state.grade) return false;
+  if (DEMO && state.vacancyOnly && demoVacancy(f.id).status !== 'open') return false;
+  return true;
+}
+const dist = (a, b) => { const dx=(a[1]-b[1])*102, dy=(a[0]-b[0])*111; return Math.hypot(dx,dy); };
+
+function render(){
+  Object.values(markers).forEach(m => map.removeLayer(m)); markers = {};
+  const shown = facilities.filter(pass);
+  shown.forEach(f => {
+    const color = DEMO ? stColor[demoVacancy(f.id).status] : 'var(--primary)';
+    const mk = L.marker([f.lat, f.lon], { icon: L.divIcon({ className:'',
+      html:`<div class="pin-dot" style="width:16px;height:16px;background:${DEMO ? stColor[demoVacancy(f.id).status] : '#1f7a6d'}"></div>`,
+      iconSize:[16,16], iconAnchor:[8,8] }) }).addTo(map).on('click', () => openCard(f));
+    markers[f.id] = mk;
+  });
+  let listArr = [...shown];
+  if (state.userLoc) listArr.sort((a,b) => dist(state.userLoc,[a.lat,a.lon]) - dist(state.userLoc,[b.lat,b.lon]));
+  const missShown = missing.filter(pass);
+  list.innerHTML = listArr.map(f => cardHTML(f, true)).join('') +
+    missShown.map(f => cardHTML(f, false)).join('');
+  listArr.forEach(f => document.getElementById('lc-' + f.id).onclick = () => { openCard(f); if (innerWidth < 900) { document.body.classList.remove('showlist'); viewToggle.textContent='☰ 清單'; } map.setView([f.lat,f.lon],16); });
+  missShown.forEach(f => document.getElementById('lc-' + f.id).onclick = () => openCard(f));
+  count.textContent = `顯示 ${shown.length} 家` + (missShown.length ? `＋${missShown.length} 家位置校正中（見清單）` : '');
+}
+
+function vacancyBadge(f){
+  if (!DEMO) return `<i class="b-ts">核定 ${f.beds_approved} 床｜即時空位尚未開放</i>`;
+  const v = demoVacancy(f.id);
+  if (v.status === 'open') return `<i class="b-open">有空位 ${v.slots} 名・${v.from} 起</i><i class="b-ts">更新於 ${v.hours} 小時前・示意</i>`;
+  if (v.status === 'full') return `<i class="b-full">額滿</i><i class="b-ts">更新於 ${v.hours} 小時前・示意</i>`;
+  return `<i class="b-stale">逾 30 天未更新・示意</i>`;
+}
+function cardHTML(f, located){
+  const d = state.userLoc && located ? `・${dist(state.userLoc,[f.lat,f.lon]).toFixed(1)} km` : '';
+  return `<div class="fcard" id="lc-${f.id}">
+    <div class="nm">${f.name}</div>
+    <div class="badges">${f.grade ? `<i class="b-grade">評鑑 ${f.grade_raw}</i>` : ''}${f.quasi_public ? '<i class="b-quasi">準公共</i>' : ''}${located ? '' : '<i class="b-pending">位置校正中</i>'}${vacancyBadge(f)}</div>
+    <div class="meta">${f.district}・月費 ${f.fee_monthly?.toLocaleString() ?? '—'} 元${d}</div>
+  </div>`;
+}
+function openCard(f){
+  location.hash = encodeURIComponent(f.id);
+  drawerBody.innerHTML = `
+    <h2>${f.name}</h2>
+    <div class="badges">${f.grade ? `<i class="b-grade">評鑑 ${f.grade_raw}</i>` : '<i class="b-pending">尚未評鑑</i>'}${f.quasi_public ? '<i class="b-quasi">準公共化</i>' : ''}${vacancyBadge(f)}</div>
+    <div class="row"><b>月費</b>　${f.fee_monthly?.toLocaleString() ?? '—'} 元（平均）</div>
+    <div class="row"><b>核定床位</b>　${f.beds_approved} 床｜<b>樓層</b> ${f.floor}｜<b>面積</b> ${f.area_m2} ㎡</div>
+    <div class="row"><b>地址</b>　${f.address}${f.geo_precision === 'street' ? '（地圖位置為街道概略）' : ''}</div>
+    <div class="row" style="color:var(--muted);font-size:12px">評鑑結果轉載自桃園市婦幼發展局公告（<a href="https://dowcd.tycg.gov.tw/" target="_blank" style="color:var(--primary)">原文</a>）；本平台不做評分與推薦。資料擷取 2026-08-06。</div>
+    <div class="cta">
+      <a class="call" href="tel:${(f.phone||'').replace(/[^\d+]/g,'')}">撥打電話</a>
+      <a class="nav" target="_blank" href="https://www.google.com/maps/dir/?api=1&destination=${encodeURIComponent(f.address)}">導航</a>
+      <a class="share" href="#" onclick="navigator.clipboard.writeText(location.href).then(()=>this.textContent='已複製!');return false">分享</a>
+    </div>`;
+  drawer.classList.add('open');
+}
+function openById(id){ const f = facilities.find(x => x.id === id) || missing.find(x => x.id === id); if (f) { openCard(f); if (f.lat) map.setView([f.lat, f.lon], 16); } }
+function closeDrawer(){ drawer.classList.remove('open'); history.replaceState(null,'',location.pathname + location.search); }
+</script>
+</body>
+</html>

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>關於與資料來源 — 桃園托育地圖</title>
+<style>
+body{font-family:"Noto Sans TC","PingFang TC",system-ui,sans-serif;background:#f2f8f6;color:#173f38;margin:0}
+header{background:#1f7a6d;color:#fff;padding:12px 16px;font-weight:800}
+header a{color:#d8ece8;text-decoration:none;font-size:13px;float:right;margin-top:2px}
+main{max-width:760px;margin:0 auto;padding:24px 18px 60px;line-height:1.85}
+h2{font-size:18px;margin:1.4em 0 .5em;color:#1f7a6d}
+table{width:100%;border-collapse:collapse;font-size:13.5px;background:#fff}
+th{background:#1f7a6d;color:#fff;text-align:left;padding:.5em .8em}
+td{border-bottom:1px solid #d7e8e2;padding:.5em .8em;color:#3c5a53}
+p,li{font-size:14.5px;color:#3c5a53}
+.note{background:#fcf3e2;color:#b97a0e;border-radius:10px;padding:.8em 1em;font-size:13.5px;font-weight:700}
+a{color:#1f7a6d}
+</style>
+</head>
+<body>
+<header>關於與資料來源<a href="index.html">← 回地圖</a></header>
+<main>
+  <h2>這個網站是什麼</h2>
+  <p>把桃園市所有合法立案的托育資源整合在一張地圖上：評鑑結果、收費、核定名額、聯絡方式。全部來自政府公開資料，每一項都可回溯來源。</p>
+
+  <h2>資料來源與更新日期</h2>
+  <table>
+    <tr><th>資料</th><th>來源</th><th>擷取日期</th></tr>
+    <tr><td>托嬰中心名冊（194 家：類別／評鑑／月費／核定床位／地址電話）</td><td>桃園市政府開放資料 dataset 168379（婦幼發展局）</td><td>2026-08-06</td></tr>
+    <tr><td>準公共化名冊</td><td>dataset 168385</td><td>2026-08-06</td></tr>
+    <tr><td>機構座標</td><td>依名冊地址比對 OpenStreetMap（門牌級 166 家／街道級 23 家／5 家人工校正中）</td><td>2026-08-06</td></tr>
+    <tr><td>底圖</td><td>© OpenStreetMap 貢獻者</td><td>即時</td></tr>
+  </table>
+
+  <h2>資料誠實原則</h2>
+  <ul>
+    <li><b>即時空位尚未開放</b>：目前沒有任何政府公開資料含各機構即時空位。本站顯示「核定床位數」（容量上限）。空位透明需要制度配套（機構申報機制或系統介接）——這正是本政見要建置的部分。</li>
+    <li><b>什麼是「示意資料」</b>：政策展示模式（網址加 <code>?demo=1</code>）中的空位資訊為示意，用於呈現制度建置後的樣貌，全站以橫幅與標籤明確標示，公開版預設不含。</li>
+    <li><b>評鑑呈現</b>：僅轉載官方評鑑等級並連結原始公告，本站不做評分、排名或推薦。</li>
+    <li><b>個別保母不標示於地圖</b>：保障居家托育人員住址隱私（參照英國 Ofsted 做法），請洽居家托育服務中心媒合。</li>
+    <li><b>位置精度</b>：每筆機構標示定位方式；「街道概略」表示定位到路段而非門牌。</li>
+  </ul>
+
+  <div class="note">看到資料錯誤？本專案開源，歡迎透過 GitHub issue 回報或直接提交修正。</div>
+
+  <h2>授權</h2>
+  <p>程式碼 MIT 授權；政府資料依「政府資料開放授權條款—第 1 版」使用並標示來源。</p>
+</main>
+</body>
+</html>
