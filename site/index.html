@@ -119,6 +119,9 @@ function demoVacancy(id){
   return { status:'open', slots: 1 + h%6, from: ['2026-09','2026-10','2026-11','2027-01'][h%4], hours: 1 + h%48 };
 }
 const stColor = { open:'#1f7a6d', full:'#c94f43', stale:'#d98e32' };
+// demo 示意夜托：約 9% 機構標為「延長收托試辦」，與空位示意用不同 bit 避免重疊
+function demoNight(id){ let h = 0; for (const c of id) h = (h*31 + c.charCodeAt(0)) >>> 0; return (((h ^ (h >> 13)) * 0x45d9f3b >>> 0) % 100) < 9; }
+function isNight(f){ return DEMO ? demoNight(f.id) : !!f.night_care; }
 
 init();
 async function init(){
@@ -165,7 +168,7 @@ function pass(f){
   if (state.type && f.type !== state.type) return false;
   if (state.quasi && !f.quasi_public) return false;
   if (state.grade && f.grade !== state.grade) return false;
-  if (state.night && !f.night_care) return false;
+  if (state.night && !isNight(f)) return false;
   if (DEMO && state.vacancyOnly && demoVacancy(f.id).status !== 'open') return false;
   return true;
 }
@@ -190,6 +193,8 @@ function render(){
   missShown.forEach(f => document.getElementById('lc-' + f.id).onclick = () => openCard(f));
   count.textContent = (state.night && shown.length === 0)
     ? '0 家——有登載收托時間的 48 家皆為日間收托，其餘未登載；夜間托育現況見「關於」頁'
+    : (DEMO && state.night)
+    ? `顯示 ${shown.length} 家（延長收托試辦・政策示意）`
     : `顯示 ${shown.length} 家` + (missShown.length ? `＋${missShown.length} 家位置校正中（見清單）` : '');
 }
 
@@ -208,7 +213,7 @@ function cardHTML(f, located){
   const d = state.userLoc && located ? `・${dist(state.userLoc,[f.lat,f.lon]).toFixed(1)} km` : '';
   return `<div class="fcard" id="lc-${f.id}">
     <div class="nm">${f.name}</div>
-    <div class="badges">${f.grade ? `<i class="b-grade">評鑑 ${f.grade_raw}</i>` : ''}${f.quasi_public ? '<i class="b-quasi">準公共</i>' : ''}${located ? '' : '<i class="b-pending">位置校正中</i>'}${vacancyBadge(f)}</div>
+    <div class="badges">${f.grade ? `<i class="b-grade">評鑑 ${f.grade_raw}</i>` : ''}${f.quasi_public ? '<i class="b-quasi">準公共</i>' : ''}${DEMO && demoNight(f.id) ? '<i class="b-open">夜托試辦・示意</i>' : ''}${located ? '' : '<i class="b-pending">位置校正中</i>'}${vacancyBadge(f)}</div>
     <div class="meta">${f.district}・月費 ${f.fee_monthly?.toLocaleString() ?? '—'} 元${d}</div>
   </div>`;
 }
@@ -220,6 +225,7 @@ function openCard(f){
     <div class="row"><b>月費</b>　${f.fee_monthly?.toLocaleString() ?? '—'} 元（平均）</div>
     <div class="row"><b>核定床位</b>　${f.beds_approved} 床｜<b>樓層</b> ${f.floor}｜<b>面積</b> ${f.area_m2} ㎡</div>
     ${f.hours ? `<div class="row"><b>收托時間</b>　${f.hours}${f.night_care ? '　<i class="b-open" style="font-style:normal;font-size:11px;border-radius:4px;padding:1px 6px">夜間托育</i>' : ''}</div>` : ''}
+    ${DEMO && demoNight(f.id) ? `<div class="row"><b>延長收托</b>　週一至週五至 22:00　<i class="b-ts" style="font-style:normal;font-size:11px;border-radius:4px;padding:1px 6px">政策試辦示意——非現行服務</i></div>` : ''}
     ${f.babycare_url ? `<div class="row"><b>官方頁面</b>　<a href="${f.babycare_url}" target="_blank" style="color:var(--primary)">桃園育兒資源網</a>${f.waiting_count != null ? `（候補名單逐筆公開）` : ''}</div>` : ''}
     <div class="row"><b>地址</b>　${f.address}${f.geo_precision === 'street' ? '（地圖位置為街道概略）' : ''}</div>
     <div class="row" style="color:var(--muted);font-size:12px">評鑑結果轉載自桃園市婦幼發展局公告（<a href="https://dowcd.tycg.gov.tw/" target="_blank" style="color:var(--primary)">原文</a>）；本平台不做評分與推薦。資料擷取 2026-08-06。</div>
