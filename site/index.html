@@ -102,7 +102,7 @@ footer a{color:var(--primary)}
   <div id="count"></div>
   <div id="drawer"><button class="close" onclick="closeDrawer()">×</button><div id="drawerBody"></div></div>
 </div>
-<footer>資料：桃園市政府開放資料（dataset 168379，2026-08-06 擷取）｜地圖 © OpenStreetMap 貢獻者｜<a href="about.html">資料誠實原則</a></footer>
+<footer><span id="verinfo"></span>資料：桃園市政府開放資料＋桃園育兒資源網｜地圖 © OpenStreetMap 貢獻者｜<a href="about.html">資料誠實原則</a></footer>
 <script src="vendor/leaflet.js"></script>
 <script>
 const DEMO = new URLSearchParams(location.search).get('demo') === '1';
@@ -129,6 +129,8 @@ async function init(){
     { attribution:'© OpenStreetMap', maxZoom:19 }).addTo(map);
   cfg.districts.forEach(d => fDistrict.add(new Option(d, d)));
   const gj = await (await fetch('data/facilities.geojson')).json();
+  const md = gj.metadata || {};
+  verinfo.textContent = `v${cfg.version || '0'}・資料更新 ${(md.built_at || '').slice(0, 16).replace('T', ' ')}（名冊 ${md.fetched || '—'}／候補 ${md.tycg_fetched || '—'}）｜`;
   facilities = gj.features.map(f => ({ ...f.properties, lat:f.geometry.coordinates[1], lon:f.geometry.coordinates[0] }));
   missing = await (await fetch('data/missing.json')).json();
   bindTools();

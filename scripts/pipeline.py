@@ -188,9 +188,13 @@ def build():
                           "properties": props})
         else:
             miss.append(f["name"] + " | " + f["address"])
+    import datetime
+    tycg_files = sorted(RAW.glob("tycg_api_*.json"))
     gj = {"type": "FeatureCollection",
           "metadata": {"source": "桃園市政府開放資料 dataset 168379（政府資料開放授權條款 v1）",
                        "fetched": latest_raw().stem.split("_")[1].replace(".raw", ""),
+                       "tycg_fetched": tycg_files[-1].stem.split("_")[-1] if tycg_files else None,
+                       "built_at": datetime.datetime.now().astimezone().isoformat(timespec="minutes"),
                        "count": len(feats), "missing": len(miss)},
           "features": feats}
     (PROC / "facilities.geojson").write_text(json.dumps(gj, ensure_ascii=False), "utf-8")
