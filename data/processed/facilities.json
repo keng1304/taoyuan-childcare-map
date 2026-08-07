@@ -18,7 +18,11 @@
   "vacancy": null,
   "available_from": null,
   "vacancy_source": "none",
-  "vacancy_updated_at": null
+  "vacancy_updated_at": null,
+  "tycg_id": "47",
+  "babycare_url": "https://babycare.tycg.gov.tw/#/org-detail/47",
+  "hours": null,
+  "night_care": false
  },
  {
   "id": "ty-2",
@@ -60,7 +64,11 @@
   "vacancy": null,
   "available_from": null,
   "vacancy_source": "none",
-  "vacancy_updated_at": null
+  "vacancy_updated_at": null,
+  "tycg_id": "93",
+  "babycare_url": "https://babycare.tycg.gov.tw/#/org-detail/93",
+  "hours": null,
+  "night_care": false
  },
  {
   "id": "ty-4",
@@ -81,7 +89,11 @@
   "vacancy": null,
   "available_from": null,
   "vacancy_source": "none",
-  "vacancy_updated_at": null
+  "vacancy_updated_at": null,
+  "tycg_id": "101",
+  "babycare_url": "https://babycare.tycg.gov.tw/#/org-detail/101",
+  "hours": null,
+  "night_care": false
  },
  {
   "id": "ty-5",
@@ -102,7 +114,11 @@
   "vacancy": null,
   "available_from": null,
   "vacancy_source": "none",
-  "vacancy_updated_at": null
+  "vacancy_updated_at": null,
+  "tycg_id": "135",
+  "babycare_url": "https://babycare.tycg.gov.tw/#/org-detail/135",
+  "hours": null,
+  "night_care": false
  },
  {
   "id": "ty-6",
@@ -144,7 +160,11 @@
   "vacancy": null,
   "available_from": null,
   "vacancy_source": "none",
-  "vacancy_updated_at": null
+  "vacancy_updated_at": null,
+  "tycg_id": "124",
+  "babycare_url": "https://babycare.tycg.gov.tw/#/org-detail/124",
+  "hours": "",
+  "night_care": false
  },
  {
   "id": "ty-8",
@@ -165,7 +185,11 @@
   "vacancy": null,
   "available_from": null,
   "vacancy_source": "none",
-  "vacancy_updated_at": null
+  "vacancy_updated_at": null,
+  "tycg_id": "CW11302002",
+  "babycare_url": "https://babycare.tycg.gov.tw/#/org-detail/CW11302002",
+  "hours": "",
+  "night_care": false
  },
  {
   "id": "ty-9",
@@ -186,7 +210,11 @@
   "vacancy": null,
   "available_from": null,
   "vacancy_source": "none",
-  "vacancy_updated_at": null
+  "vacancy_updated_at": null,
+  "tycg_id": "130",
+  "babycare_url": "https://babycare.tycg.gov.tw/#/org-detail/130",
+  "hours": "",
+  "night_care": false
  },
  {
   "id": "ty-10",
@@ -207,7 +235,11 @@
   "vacancy": null,
   "available_from": null,
   "vacancy_source": "none",
-  "vacancy_updated_at": null
+  "vacancy_updated_at": null,
+  "tycg_id": "97",
+  "babycare_url": "https://babycare.tycg.gov.tw/#/org-detail/97",
+  "hours": null,
+  "night_care": false
  },
  {
   "id": "ty-11",
@@ -228,7 +260,11 @@
   "vacancy": null,
   "available_from": null,
   "vacancy_source": "none",
-  "vacancy_updated_at": null
+  "vacancy_updated_at": null,
+  "tycg_id": "120",
+  "babycare_url": "https://babycare.tycg.gov.tw/#/org-detail/120",
+  "hours": null,
+  "night_care": false
  },
  {
   "id": "ty-12",
@@ -249,7 +285,11 @@
   "vacancy": null,
   "available_from": null,
   "vacancy_source": "none",
-  "vacancy_updated_at": null
+  "vacancy_updated_at": null,
+  "tycg_id": "142",
+  "babycare_url": "https://babycare.tycg.gov.tw/#/org-detail/142",
+  "hours": null,
+  "night_care": false
  },
  {
   "id": "ty-13",
@@ -270,7 +310,11 @@
   "vacancy": null,
   "available_from": null,
   "vacancy_source": "none",
-  "vacancy_updated_at": null
+  "vacancy_updated_at": null,
+  "tycg_id": "50168",
+  "babycare_url": "https://babycare.tycg.gov.tw/#/org-detail/50168",
+  "hours": null,
+  "night_care": false
  },
  {
   "id": "ty-14",
@@ -291,7 +335,11 @@
   "vacancy": null,
   "available_from": null,
   "vacancy_source": "none",
-  "vacancy_updated_at": null
+  "vacancy_updated_at": null,
+  "tycg_id": "123**",
+  "babycare_url": "https://babycare.tycg.gov.tw/#/org-detail/123**",
+  "hours": "",
+  "night_care": false
  },
  {
   "id": "ty-15",
@@ -312,7 +360,11 @@
   "vacancy": null,
   "available_from": null,
   "vacancy_source": "none",
-  "vacancy_updated_at": null
+  "vacancy_updated_at": null,
+  "tycg_id": "CW11208005",
+  "babycare_url": "https://babycare.tycg.gov.tw/#/org-detail/CW11208005",
+  "hours": "",
+  "night_care": false
  },
  {
   "id": "ty-16",
@@ -333,7 +385,11 @@
   "vacancy": null,
   "available_from": null,
   "vacancy_source": "none",
-  "vacancy_updated_at": null
+  "vacancy_updated_at": null,
+  "tycg_id": "CW11210009",
+  "babycare_url": "https://babycare.tycg.gov.tw/#/org-detail/CW11210009",
+  "hours": "0730-1730",
+  "night_care": false
  },
  {
   "id": "ty-17",
@@ -354,7 +410,11 @@
   "vacancy": null,
   "available_from": null,
   "vacancy_source": "none",
-  "vacancy_updated_at": null
+  "vacancy_updated_at": null,
+  "tycg_id": "CW11308009",
+  "babycare_url": "https://babycare.tycg.gov.tw/#/org-detail/CW11308009",
+  "hours": "",
+  "night_care": false
  },
  {
   "id": "ty-18",
@@ -375,7 +435,11 @@
   "vacancy": null,
   "available_from": null,
   "vacancy_source": "none",
-  "vacancy_updated_at": null
+  "vacancy_updated_at": null,
+  "tycg_id": "25",
+  "babycare_url": "https://babycare.tycg.gov.tw/#/org-detail/25",
+  "hours": null,
+  "night_care": false
  },
  {
   "id": "ty-19",
@@ -396,7 +460,11 @@
   "vacancy": null,
   "available_from": null,
   "vacancy_source": "none",
-  "vacancy_updated_at": null
+  "vacancy_updated_at": null,
+  "tycg_id": "27",
+  "babycare_url": "https://babycare.tycg.gov.tw/#/org-detail/27",
+  "hours": null,
+  "night_care": false
  },
  {
   "id": "ty-20",
@@ -417,7 +485,11 @@
   "vacancy": null,
   "available_from": null,
   "vacancy_source": "none",
-  "vacancy_updated_at": null
+  "vacancy_updated_at": null,
+  "tycg_id": "28",
+  "babycare_url": "https://babycare.tycg.gov.tw/#/org-detail/28",
+  "hours": null,
+  "night_care": false
  },
  {
   "id": "ty-21",
@@ -438,7 +510,11 @@
   "vacancy": null,
   "available_from": null,
   "vacancy_source": "none",
-  "vacancy_updated_at": null
+  "vacancy_updated_at": null,
+  "tycg_id": "30",
+  "babycare_url": "https://babycare.tycg.gov.tw/#/org-detail/30",
+  "hours": null,
+  "night_care": false
  },
  {
   "id": "ty-22",
@@ -459,7 +535,11 @@
   "vacancy": null,
   "available_from": null,
   "vacancy_source": "none",
-  "vacancy_updated_at": null
+  "vacancy_updated_at": null,
+  "tycg_id": "35",
+  "babycare_url": "https://babycare.tycg.gov.tw/#/org-detail/35",
+  "hours": null,
+  "night_care": false
  },
  {
   "id": "ty-23",
@@ -480,7 +560,11 @@
   "vacancy": null,
   "available_from": null,
   "vacancy_source": "none",
-  "vacancy_updated_at": null
+  "vacancy_updated_at": null,
+  "tycg_id": "37",
+  "babycare_url": "https://babycare.tycg.gov.tw/#/org-detail/37",
+  "hours": null,
+  "night_care": false
  },
  {
   "id": "ty-24",
@@ -501,7 +585,11 @@
   "vacancy": null,
   "available_from": null,
   "vacancy_source": "none",
-  "vacancy_updated_at": null
+  "vacancy_updated_at": null,
+  "tycg_id": "38",
+  "babycare_url": "https://babycare.tycg.gov.tw/#/org-detail/38",
+  "hours": null,
+  "night_care": false
  },
  {
   "id": "ty-25",
@@ -522,7 +610,11 @@
   "vacancy": null,
   "available_from": null,
   "vacancy_source": "none",
-  "vacancy_updated_at": null
+  "vacancy_updated_at": null,
+  "tycg_id": "42",
+  "babycare_url": "https://babycare.tycg.gov.tw/#/org-detail/42",
+  "hours": null,
+  "night_care": false
  },
  {
   "id": "ty-26",
@@ -543,7 +635,11 @@
   "vacancy": null,
   "available_from": null,
   "vacancy_source": "none",
-  "vacancy_updated_at": null
+  "vacancy_updated_at": null,
+  "tycg_id": "46",
+  "babycare_url": "https://babycare.tycg.gov.tw/#/org-detail/46",
+  "hours": null,
+  "night_care": false
  },
  {
   "id": "ty-27",
@@ -564,7 +660,11 @@
   "vacancy": null,
   "available_from": null,
   "vacancy_source": "none",
-  "vacancy_updated_at": null
+  "vacancy_updated_at": null,
+  "tycg_id": "48",
+  "babycare_url": "https://babycare.tycg.gov.tw/#/org-detail/48",
+  "hours": null,
+  "night_care": false
  },
  {
   "id": "ty-28",
@@ -585,7 +685,11 @@
   "vacancy": null,
   "available_from": null,
   "vacancy_source": "none",
-  "vacancy_updated_at": null
+  "vacancy_updated_at": null,
+  "tycg_id": "57",
+  "babycare_url": "https://babycare.tycg.gov.tw/#/org-detail/57",
+  "hours": null,
+  "night_care": false
  },
  {
   "id": "ty-29",
@@ -606,7 +710,11 @@
   "vacancy": null,
   "available_from": null,
   "vacancy_source": "none",
-  "vacancy_updated_at": null
+  "vacancy_updated_at": null,
+  "tycg_id": "66",
+  "babycare_url": "https://babycare.tycg.gov.tw/#/org-detail/66",
+  "hours": null,
+  "night_care": false
  },
  {
   "id": "ty-30",
@@ -627,7 +735,11 @@
   "vacancy": null,
   "available_from": null,
   "vacancy_source": "none",
-  "vacancy_updated_at": null
+  "vacancy_updated_at": null,
+  "tycg_id": "68",
+  "babycare_url": "https://babycare.tycg.gov.tw/#/org-detail/68",
+  "hours": null,
+  "night_care": false
  },
  {
   "id": "ty-31",
@@ -648,7 +760,11 @@
   "vacancy": null,
   "available_from": null,
   "vacancy_source": "none",
-  "vacancy_updated_at": null
+  "vacancy_updated_at": null,
+  "tycg_id": "74",
+  "babycare_url": "https://babycare.tycg.gov.tw/#/org-detail/74",
+  "hours": null,
+  "night_care": false
  },
  {
   "id": "ty-32",
@@ -669,7 +785,11 @@
   "vacancy": null,
   "available_from": null,
   "vacancy_source": "none",
-  "vacancy_updated_at": null
+  "vacancy_updated_at": null,
+  "tycg_id": "78",
+  "babycare_url": "https://babycare.tycg.gov.tw/#/org-detail/78",
+  "hours": null,
+  "night_care": false
  },
  {
   "id": "ty-33",
@@ -690,7 +810,11 @@
   "vacancy": null,
   "available_from": null,
   "vacancy_source": "none",
-  "vacancy_updated_at": null
+  "vacancy_updated_at": null,
+  "tycg_id": "80",
+  "babycare_url": "https://babycare.tycg.gov.tw/#/org-detail/80",
+  "hours": null,
+  "night_care": false
  },
  {
   "id": "ty-34",
@@ -711,7 +835,11 @@
   "vacancy": null,
   "available_from": null,
   "vacancy_source": "none",
-  "vacancy_updated_at": null
+  "vacancy_updated_at": null,
+  "tycg_id": "81",
+  "babycare_url": "https://babycare.tycg.gov.tw/#/org-detail/81",
+  "hours": null,
+  "night_care": false
  },
  {
   "id": "ty-35",
@@ -732,7 +860,11 @@
   "vacancy": null,
   "available_from": null,
   "vacancy_source": "none",
-  "vacancy_updated_at": null
+  "vacancy_updated_at": null,
+  "tycg_id": "85",
+  "babycare_url": "https://babycare.tycg.gov.tw/#/org-detail/85",
+  "hours": null,
+  "night_care": false
  },
  {
   "id": "ty-36",
@@ -753,7 +885,11 @@
   "vacancy": null,
   "available_from": null,
   "vacancy_source": "none",
-  "vacancy_updated_at": null
+  "vacancy_updated_at": null,
+  "tycg_id": "87",
+  "babycare_url": "https://babycare.tycg.gov.tw/#/org-detail/87",
+  "hours": null,
+  "night_care": false
  },
  {
   "id": "ty-37",
@@ -774,7 +910,11 @@
   "vacancy": null,
   "available_from": null,
   "vacancy_source": "none",
-  "vacancy_updated_at": null
+  "vacancy_updated_at": null,
+  "tycg_id": "90",
+  "babycare_url": "https://babycare.tycg.gov.tw/#/org-detail/90",
+  "hours": null,
+  "night_care": false
  },
  {
   "id": "ty-38",
@@ -795,7 +935,11 @@
   "vacancy": null,
   "available_from": null,
   "vacancy_source": "none",
-  "vacancy_updated_at": null
+  "vacancy_updated_at": null,
+  "tycg_id": "98",
+  "babycare_url": "https://babycare.tycg.gov.tw/#/org-detail/98",
+  "hours": null,
+  "night_care": false
  },
  {
   "id": "ty-39",
@@ -816,7 +960,11 @@
   "vacancy": null,
   "available_from": null,
   "vacancy_source": "none",
-  "vacancy_updated_at": null
+  "vacancy_updated_at": null,
+  "tycg_id": "40160",
+  "babycare_url": "https://babycare.tycg.gov.tw/#/org-detail/40160",
+  "hours": null,
+  "night_care": false
  },
  {
   "id": "ty-40",
@@ -837,7 +985,11 @@
   "vacancy": null,
   "available_from": null,
   "vacancy_source": "none",
-  "vacancy_updated_at": null
+  "vacancy_updated_at": null,
+  "tycg_id": "107",
+  "babycare_url": "https://babycare.tycg.gov.tw/#/org-detail/107",
+  "hours": null,
+  "night_care": false
  },
  {
   "id": "ty-41",
@@ -858,7 +1010,11 @@
   "vacancy": null,
   "available_from": null,
   "vacancy_source": "none",
-  "vacancy_updated_at": null
+  "vacancy_updated_at": null,
+  "tycg_id": "115",
+  "babycare_url": "https://babycare.tycg.gov.tw/#/org-detail/115",
+  "hours": null,
+  "night_care": false
  },
  {
   "id": "ty-42",
@@ -879,7 +1035,11 @@
   "vacancy": null,
   "available_from": null,
   "vacancy_source": "none",
-  "vacancy_updated_at": null
+  "vacancy_updated_at": null,
+  "tycg_id": "40158",
+  "babycare_url": "https://babycare.tycg.gov.tw/#/org-detail/40158",
+  "hours": null,
+  "night_care": false
  },
  {
   "id": "ty-43",
@@ -900,7 +1060,11 @@
   "vacancy": null,
   "available_from": null,
   "vacancy_source": "none",
-  "vacancy_updated_at": null
+  "vacancy_updated_at": null,
+  "tycg_id": "40159",
+  "babycare_url": "https://babycare.tycg.gov.tw/#/org-detail/40159",
+  "hours": null,
+  "night_care": false
  },
  {
   "id": "ty-44",
@@ -921,7 +1085,11 @@
   "vacancy": null,
   "available_from": null,
   "vacancy_source": "none",
-  "vacancy_updated_at": null
+  "vacancy_updated_at": null,
+  "tycg_id": "50172",
+  "babycare_url": "https://babycare.tycg.gov.tw/#/org-detail/50172",
+  "hours": null,
+  "night_care": false
  },
  {
   "id": "ty-45",
@@ -942,7 +1110,11 @@
   "vacancy": null,
   "available_from": null,
   "vacancy_source": "none",
-  "vacancy_updated_at": null
+  "vacancy_updated_at": null,
+  "tycg_id": "CW11112013",
+  "babycare_url": "https://babycare.tycg.gov.tw/#/org-detail/CW11112013",
+  "hours": "",
+  "night_care": false
  },
  {
   "id": "ty-46",
@@ -963,7 +1135,11 @@
   "vacancy": null,
   "available_from": null,
   "vacancy_source": "none",
-  "vacancy_updated_at": null
+  "vacancy_updated_at": null,
+  "tycg_id": "CW11201027",
+  "babycare_url": "https://babycare.tycg.gov.tw/#/org-detail/CW11201027",
+  "hours": "",
+  "night_care": false
  },
  {
   "id": "ty-47",
@@ -984,7 +1160,11 @@
   "vacancy": null,
   "available_from": null,
   "vacancy_source": "none",
-  "vacancy_updated_at": null
+  "vacancy_updated_at": null,
+  "tycg_id": "CW11206004",
+  "babycare_url": "https://babycare.tycg.gov.tw/#/org-detail/CW11206004",
+  "hours": "7：00-17：00",
+  "night_care": false
  },
  {
   "id": "ty-48",
@@ -1005,7 +1185,11 @@
   "vacancy": null,
   "available_from": null,
   "vacancy_source": "none",
-  "vacancy_updated_at": null
+  "vacancy_updated_at": null,
+  "tycg_id": "CW11211004",
+  "babycare_url": "https://babycare.tycg.gov.tw/#/org-detail/CW11211004",
+  "hours": "",
+  "night_care": false
  },
  {
   "id": "ty-49",
@@ -1026,7 +1210,11 @@
   "vacancy": null,
   "available_from": null,
   "vacancy_source": "none",
-  "vacancy_updated_at": null
+  "vacancy_updated_at": null,
+  "tycg_id": "CW11301011",
+  "babycare_url": "https://babycare.tycg.gov.tw/#/org-detail/CW11301011",
+  "hours": "",
+  "night_care": false
  },
  {
   "id": "ty-50",
@@ -1047,7 +1235,11 @@
   "vacancy": null,
   "available_from": null,
   "vacancy_source": "none",
-  "vacancy_updated_at": null
+  "vacancy_updated_at": null,
+  "tycg_id": "CW11301012",
+  "babycare_url": "https://babycare.tycg.gov.tw/#/org-detail/CW11301012",
+  "hours": "",
+  "night_care": false
  },
  {
   "id": "ty-51",
@@ -1068,7 +1260,11 @@
   "vacancy": null,
   "available_from": null,
   "vacancy_source": "none",
-  "vacancy_updated_at": null
+  "vacancy_updated_at": null,
+  "tycg_id": "CW11304004",
+  "babycare_url": "https://babycare.tycg.gov.tw/#/org-detail/CW11304004",
+  "hours": "",
+  "night_care": false
  },
  {
   "id": "ty-52",
@@ -1089,7 +1285,11 @@
   "vacancy": null,
   "available_from": null,
   "vacancy_source": "none",
-  "vacancy_updated_at": null
+  "vacancy_updated_at": null,
+  "tycg_id": "CW11306007",
+  "babycare_url": "https://babycare.tycg.gov.tw/#/org-detail/CW11306007",
+  "hours": "",
+  "night_care": false
  },
  {
   "id": "ty-53",
@@ -1110,7 +1310,11 @@
   "vacancy": null,
   "available_from": null,
   "vacancy_source": "none",
-  "vacancy_updated_at": null
+  "vacancy_updated_at": null,
+  "tycg_id": "69",
+  "babycare_url": "https://babycare.tycg.gov.tw/#/org-detail/69",
+  "hours": null,
+  "night_care": false
  },
  {
   "id": "ty-54",
@@ -1152,7 +1356,11 @@
   "vacancy": null,
   "available_from": null,
   "vacancy_source": "none",
-  "vacancy_updated_at": null
+  "vacancy_updated_at": null,
+  "tycg_id": "83",
+  "babycare_url": "https://babycare.tycg.gov.tw/#/org-detail/83",
+  "hours": null,
+  "night_care": false
  },
  {
   "id": "ty-56",
@@ -1173,7 +1381,11 @@
   "vacancy": null,
   "available_from": null,
   "vacancy_source": "none",
-  "vacancy_updated_at": null
+  "vacancy_updated_at": null,
+  "tycg_id": "110",
+  "babycare_url": "https://babycare.tycg.gov.tw/#/org-detail/110",
+  "hours": null,
+  "night_care": false
  },
  {
   "id": "ty-57",
@@ -1194,7 +1406,11 @@
   "vacancy": null,
   "available_from": null,
   "vacancy_source": "none",
-  "vacancy_updated_at": null
+  "vacancy_updated_at": null,
+  "tycg_id": "40157",
+  "babycare_url": "https://babycare.tycg.gov.tw/#/org-detail/40157",
+  "hours": null,
+  "night_care": false
  },
  {
   "id": "ty-58",
@@ -1215,7 +1431,11 @@
   "vacancy": null,
   "available_from": null,
   "vacancy_source": "none",
-  "vacancy_updated_at": null
+  "vacancy_updated_at": null,
+  "tycg_id": "1288",
+  "babycare_url": "https://babycare.tycg.gov.tw/#/org-detail/1288",
+  "hours": "",
+  "night_care": false
  },
  {
   "id": "ty-59",
@@ -1236,7 +1456,11 @@
   "vacancy": null,
   "available_from": null,
   "vacancy_source": "none",
-  "vacancy_updated_at": null
+  "vacancy_updated_at": null,
+  "tycg_id": "0000",
+  "babycare_url": "https://babycare.tycg.gov.tw/#/org-detail/0000",
+  "hours": "",
+  "night_care": false
  },
  {
   "id": "ty-60",
@@ -1257,7 +1481,11 @@
   "vacancy": null,
   "available_from": null,
   "vacancy_source": "none",
-  "vacancy_updated_at": null
+  "vacancy_updated_at": null,
+  "tycg_id": "40",
+  "babycare_url": "https://babycare.tycg.gov.tw/#/org-detail/40",
+  "hours": null,
+  "night_care": false
  },
  {
   "id": "ty-61",
@@ -1320,7 +1548,11 @@
   "vacancy": null,
   "available_from": null,
   "vacancy_source": "none",
-  "vacancy_updated_at": null
+  "vacancy_updated_at": null,
+  "tycg_id": "40151",
+  "babycare_url": "https://babycare.tycg.gov.tw/#/org-detail/40151",
+  "hours": null,
+  "night_care": false
  },
  {
   "id": "ty-64",
@@ -1341,7 +1573,11 @@
   "vacancy": null,
   "available_from": null,
   "vacancy_source": "none",
-  "vacancy_updated_at": null
+  "vacancy_updated_at": null,
+  "tycg_id": "51",
+  "babycare_url": "https://babycare.tycg.gov.tw/#/org-detail/51",
+  "hours": null,
+  "night_care": false
  },
  {
   "id": "ty-65",
@@ -1362,7 +1598,11 @@
   "vacancy": null,
   "available_from": null,
   "vacancy_source": "none",
-  "vacancy_updated_at": null
+  "vacancy_updated_at": null,
+  "tycg_id": "52",
+  "babycare_url": "https://babycare.tycg.gov.tw/#/org-detail/52",
+  "hours": null,
+  "night_care": false
  },
  {
   "id": "ty-66",
@@ -1383,7 +1623,11 @@
   "vacancy": null,
   "available_from": null,
   "vacancy_source": "none",
-  "vacancy_updated_at": null
+  "vacancy_updated_at": null,
+  "tycg_id": "54",
+  "babycare_url": "https://babycare.tycg.gov.tw/#/org-detail/54",
+  "hours": null,
+  "night_care": false
  },
  {
   "id": "ty-67",
@@ -1404,7 +1648,11 @@
   "vacancy": null,
   "available_from": null,
   "vacancy_source": "none",
-  "vacancy_updated_at": null
+  "vacancy_updated_at": null,
+  "tycg_id": "56",
+  "babycare_url": "https://babycare.tycg.gov.tw/#/org-detail/56",
+  "hours": null,
+  "night_care": false
  },
  {
   "id": "ty-68",
@@ -1425,7 +1673,11 @@
   "vacancy": null,
   "available_from": null,
   "vacancy_source": "none",
-  "vacancy_updated_at": null
+  "vacancy_updated_at": null,
+  "tycg_id": "59",
+  "babycare_url": "https://babycare.tycg.gov.tw/#/org-detail/59",
+  "hours": null,
+  "night_care": false
  },
  {
   "id": "ty-69",
@@ -1446,7 +1698,11 @@
   "vacancy": null,
   "available_from": null,
   "vacancy_source": "none",
-  "vacancy_updated_at": null
+  "vacancy_updated_at": null,
+  "tycg_id": "65",
+  "babycare_url": "https://babycare.tycg.gov.tw/#/org-detail/65",
+  "hours": null,
+  "night_care": false
  },
  {
   "id": "ty-70",
@@ -1467,7 +1723,11 @@
   "vacancy": null,
   "available_from": null,
   "vacancy_source": "none",
-  "vacancy_updated_at": null
+  "vacancy_updated_at": null,
+  "tycg_id": "67",
+  "babycare_url": "https://babycare.tycg.gov.tw/#/org-detail/67",
+  "hours": null,
+  "night_care": false
  },
  {
   "id": "ty-71",
@@ -1488,7 +1748,11 @@
   "vacancy": null,
   "available_from": null,
   "vacancy_source": "none",
-  "vacancy_updated_at": null
+  "vacancy_updated_at": null,
+  "tycg_id": "71",
+  "babycare_url": "https://babycare.tycg.gov.tw/#/org-detail/71",
+  "hours": null,
+  "night_care": false
  },
  {
   "id": "ty-72",
@@ -1509,7 +1773,11 @@
   "vacancy": null,
   "available_from": null,
   "vacancy_source": "none",
-  "vacancy_updated_at": null
+  "vacancy_updated_at": null,
+  "tycg_id": "75",
+  "babycare_url": "https://babycare.tycg.gov.tw/#/org-detail/75",
+  "hours": null,
+  "night_care": false
  },
  {
   "id": "ty-73",
@@ -1530,7 +1798,11 @@
   "vacancy": null,
   "available_from": null,
   "vacancy_source": "none",
-  "vacancy_updated_at": null
+  "vacancy_updated_at": null,
+  "tycg_id": "77",
+  "babycare_url": "https://babycare.tycg.gov.tw/#/org-detail/77",
+  "hours": null,
+  "night_care": false
  },
  {
   "id": "ty-74",
@@ -1551,7 +1823,11 @@
   "vacancy": null,
   "available_from": null,
   "vacancy_source": "none",
-  "vacancy_updated_at": null
+  "vacancy_updated_at": null,
+  "tycg_id": "84",
+  "babycare_url": "https://babycare.tycg.gov.tw/#/org-detail/84",
+  "hours": null,
+  "night_care": false
  },
  {
   "id": "ty-75",
@@ -1572,7 +1848,11 @@
   "vacancy": null,
   "available_from": null,
   "vacancy_source": "none",
-  "vacancy_updated_at": null
+  "vacancy_updated_at": null,
+  "tycg_id": "88",
+  "babycare_url": "https://babycare.tycg.gov.tw/#/org-detail/88",
+  "hours": null,
+  "night_care": false
  },
  {
   "id": "ty-76",
@@ -1593,7 +1873,11 @@
   "vacancy": null,
   "available_from": null,
   "vacancy_source": "none",
-  "vacancy_updated_at": null
+  "vacancy_updated_at": null,
+  "tycg_id": "95",
+  "babycare_url": "https://babycare.tycg.gov.tw/#/org-detail/95",
+  "hours": null,
+  "night_care": false
  },
  {
   "id": "ty-77",
@@ -1614,7 +1898,11 @@
   "vacancy": null,
   "available_from": null,
   "vacancy_source": "none",
-  "vacancy_updated_at": null
+  "vacancy_updated_at": null,
+  "tycg_id": "99",
+  "babycare_url": "https://babycare.tycg.gov.tw/#/org-detail/99",
+  "hours": null,
+  "night_care": false
  },
  {
   "id": "ty-78",
@@ -1635,7 +1923,11 @@
   "vacancy": null,
   "available_from": null,
   "vacancy_source": "none",
-  "vacancy_updated_at": null
+  "vacancy_updated_at": null,
+  "tycg_id": "103",
+  "babycare_url": "https://babycare.tycg.gov.tw/#/org-detail/103",
+  "hours": null,
+  "night_care": false
  },
  {
   "id": "ty-79",
@@ -1656,7 +1948,11 @@
   "vacancy": null,
   "available_from": null,
   "vacancy_source": "none",
-  "vacancy_updated_at": null
+  "vacancy_updated_at": null,
+  "tycg_id": "106",
+  "babycare_url": "https://babycare.tycg.gov.tw/#/org-detail/106",
+  "hours": null,
+  "night_care": false
  },
  {
   "id": "ty-80",
@@ -1677,7 +1973,11 @@
   "vacancy": null,
   "available_from": null,
   "vacancy_source": "none",
-  "vacancy_updated_at": null
+  "vacancy_updated_at": null,
+  "tycg_id": "108",
+  "babycare_url": "https://babycare.tycg.gov.tw/#/org-detail/108",
+  "hours": null,
+  "night_care": false
  },
  {
   "id": "ty-81",
@@ -1698,7 +1998,11 @@
   "vacancy": null,
   "available_from": null,
   "vacancy_source": "none",
-  "vacancy_updated_at": null
+  "vacancy_updated_at": null,
+  "tycg_id": "118",
+  "babycare_url": "https://babycare.tycg.gov.tw/#/org-detail/118",
+  "hours": null,
+  "night_care": false
  },
  {
   "id": "ty-82",
@@ -1719,7 +2023,11 @@
   "vacancy": null,
   "available_from": null,
   "vacancy_source": "none",
-  "vacancy_updated_at": null
+  "vacancy_updated_at": null,
+  "tycg_id": "139",
+  "babycare_url": "https://babycare.tycg.gov.tw/#/org-detail/139",
+  "hours": null,
+  "night_care": false
  },
  {
   "id": "ty-83",
@@ -1740,7 +2048,11 @@
   "vacancy": null,
   "available_from": null,
   "vacancy_source": "none",
-  "vacancy_updated_at": null
+  "vacancy_updated_at": null,
+  "tycg_id": "145",
+  "babycare_url": "https://babycare.tycg.gov.tw/#/org-detail/145",
+  "hours": null,
+  "night_care": false
  },
  {
   "id": "ty-84",
@@ -1761,7 +2073,11 @@
   "vacancy": null,
   "available_from": null,
   "vacancy_source": "none",
-  "vacancy_updated_at": null
+  "vacancy_updated_at": null,
+  "tycg_id": "50159",
+  "babycare_url": "https://babycare.tycg.gov.tw/#/org-detail/50159",
+  "hours": null,
+  "night_care": false
  },
  {
   "id": "ty-85",
@@ -1782,7 +2098,11 @@
   "vacancy": null,
   "available_from": null,
   "vacancy_source": "none",
-  "vacancy_updated_at": null
+  "vacancy_updated_at": null,
+  "tycg_id": "40148",
+  "babycare_url": "https://babycare.tycg.gov.tw/#/org-detail/40148",
+  "hours": null,
+  "night_care": false
  },
  {
   "id": "ty-86",
@@ -1803,7 +2123,11 @@
   "vacancy": null,
   "available_from": null,
   "vacancy_source": "none",
-  "vacancy_updated_at": null
+  "vacancy_updated_at": null,
+  "tycg_id": "50160",
+  "babycare_url": "https://babycare.tycg.gov.tw/#/org-detail/50160",
+  "hours": null,
+  "night_care": false
  },
  {
   "id": "ty-87",
@@ -1824,7 +2148,11 @@
   "vacancy": null,
   "available_from": null,
   "vacancy_source": "none",
-  "vacancy_updated_at": null
+  "vacancy_updated_at": null,
+  "tycg_id": "50170",
+  "babycare_url": "https://babycare.tycg.gov.tw/#/org-detail/50170",
+  "hours": null,
+  "night_care": false
  },
  {
   "id": "ty-88",
@@ -1845,7 +2173,11 @@
   "vacancy": null,
   "available_from": null,
   "vacancy_source": "none",
-  "vacancy_updated_at": null
+  "vacancy_updated_at": null,
+  "tycg_id": "50174",
+  "babycare_url": "https://babycare.tycg.gov.tw/#/org-detail/50174",
+  "hours": null,
+  "night_care": false
  },
  {
   "id": "ty-89",
@@ -1866,7 +2198,11 @@
   "vacancy": null,
   "available_from": null,
   "vacancy_source": "none",
-  "vacancy_updated_at": null
+  "vacancy_updated_at": null,
+  "tycg_id": "CW11201021",
+  "babycare_url": "https://babycare.tycg.gov.tw/#/org-detail/CW11201021",
+  "hours": "7:30-17:30",
+  "night_care": false
  },
  {
   "id": "ty-90",
@@ -1887,7 +2223,11 @@
   "vacancy": null,
   "available_from": null,
   "vacancy_source": "none",
-  "vacancy_updated_at": null
+  "vacancy_updated_at": null,
+  "tycg_id": "162",
+  "babycare_url": "https://babycare.tycg.gov.tw/#/org-detail/162",
+  "hours": "",
+  "night_care": false
  },
  {
   "id": "ty-91",
@@ -1908,7 +2248,11 @@
   "vacancy": null,
   "available_from": null,
   "vacancy_source": "none",
-  "vacancy_updated_at": null
+  "vacancy_updated_at": null,
+  "tycg_id": "CW11208006",
+  "babycare_url": "https://babycare.tycg.gov.tw/#/org-detail/CW11208006",
+  "hours": "",
+  "night_care": false
  },
  {
   "id": "ty-92",
@@ -1929,7 +2273,11 @@
   "vacancy": null,
   "available_from": null,
   "vacancy_source": "none",
-  "vacancy_updated_at": null
+  "vacancy_updated_at": null,
+  "tycg_id": "CW11301006",
+  "babycare_url": "https://babycare.tycg.gov.tw/#/org-detail/CW11301006",
+  "hours": "",
+  "night_care": false
  },
  {
   "id": "ty-93",
@@ -1950,7 +2298,11 @@
   "vacancy": null,
   "available_from": null,
   "vacancy_source": "none",
-  "vacancy_updated_at": null
+  "vacancy_updated_at": null,
+  "tycg_id": "CW11302003",
+  "babycare_url": "https://babycare.tycg.gov.tw/#/org-detail/CW11302003",
+  "hours": "",
+  "night_care": false
  },
  {
   "id": "ty-94",
@@ -1971,7 +2323,11 @@
   "vacancy": null,
   "available_from": null,
   "vacancy_source": "none",
-  "vacancy_updated_at": null
+  "vacancy_updated_at": null,
+  "tycg_id": " CW11303012",
+  "babycare_url": "https://babycare.tycg.gov.tw/#/org-detail/ CW11303012",
+  "hours": "",
+  "night_care": false
  },
  {
   "id": "ty-95",
@@ -1992,7 +2348,11 @@
   "vacancy": null,
   "available_from": null,
   "vacancy_source": "none",
-  "vacancy_updated_at": null
+  "vacancy_updated_at": null,
+  "tycg_id": "CW11304012",
+  "babycare_url": "https://babycare.tycg.gov.tw/#/org-detail/CW11304012",
+  "hours": "",
+  "night_care": false
  },
  {
   "id": "ty-96",
@@ -2013,7 +2373,11 @@
   "vacancy": null,
   "available_from": null,
   "vacancy_source": "none",
-  "vacancy_updated_at": null
+  "vacancy_updated_at": null,
+  "tycg_id": "033358141",
+  "babycare_url": "https://babycare.tycg.gov.tw/#/org-detail/033358141",
+  "hours": "",
+  "night_care": false
  },
  {
   "id": "ty-97",
@@ -2034,7 +2398,11 @@
   "vacancy": null,
   "available_from": null,
   "vacancy_source": "none",
-  "vacancy_updated_at": null
+  "vacancy_updated_at": null,
+  "tycg_id": "CW11307008",
+  "babycare_url": "https://babycare.tycg.gov.tw/#/org-detail/CW11307008",
+  "hours": "",
+  "night_care": false
  },
  {
   "id": "ty-98",
@@ -2055,7 +2423,11 @@
   "vacancy": null,
   "available_from": null,
   "vacancy_source": "none",
-  "vacancy_updated_at": null
+  "vacancy_updated_at": null,
+  "tycg_id": "CW11308015",
+  "babycare_url": "https://babycare.tycg.gov.tw/#/org-detail/CW11308015",
+  "hours": "",
+  "night_care": false
  },
  {
   "id": "ty-99",
@@ -2076,7 +2448,11 @@
   "vacancy": null,
   "available_from": null,
   "vacancy_source": "none",
-  "vacancy_updated_at": null
+  "vacancy_updated_at": null,
+  "tycg_id": "53",
+  "babycare_url": "https://babycare.tycg.gov.tw/#/org-detail/53",
+  "hours": null,
+  "night_care": false
  },
  {
   "id": "ty-100",
@@ -2097,7 +2473,11 @@
   "vacancy": null,
   "available_from": null,
   "vacancy_source": "none",
-  "vacancy_updated_at": null
+  "vacancy_updated_at": null,
+  "tycg_id": "73",
+  "babycare_url": "https://babycare.tycg.gov.tw/#/org-detail/73",
+  "hours": null,
+  "night_care": false
  },
  {
   "id": "ty-101",
@@ -2118,7 +2498,11 @@
   "vacancy": null,
   "available_from": null,
   "vacancy_source": "none",
-  "vacancy_updated_at": null
+  "vacancy_updated_at": null,
+  "tycg_id": "92",
+  "babycare_url": "https://babycare.tycg.gov.tw/#/org-detail/92",
+  "hours": null,
+  "night_care": false
  },
  {
   "id": "ty-102",
@@ -2139,7 +2523,11 @@
   "vacancy": null,
   "available_from": null,
   "vacancy_source": "none",
-  "vacancy_updated_at": null
+  "vacancy_updated_at": null,
+  "tycg_id": "113",
+  "babycare_url": "https://babycare.tycg.gov.tw/#/org-detail/113",
+  "hours": null,
+  "night_care": false
  },
  {
   "id": "ty-103",
@@ -2181,7 +2569,11 @@
   "vacancy": null,
   "available_from": null,
   "vacancy_source": "none",
-  "vacancy_updated_at": null
+  "vacancy_updated_at": null,
+  "tycg_id": "40153",
+  "babycare_url": "https://babycare.tycg.gov.tw/#/org-detail/40153",
+  "hours": null,
+  "night_care": false
  },
  {
   "id": "ty-105",
@@ -2202,7 +2594,11 @@
   "vacancy": null,
   "available_from": null,
   "vacancy_source": "none",
-  "vacancy_updated_at": null
+  "vacancy_updated_at": null,
+  "tycg_id": "94",
+  "babycare_url": "https://babycare.tycg.gov.tw/#/org-detail/94",
+  "hours": null,
+  "night_care": false
  },
  {
   "id": "ty-106",
@@ -2223,7 +2619,11 @@
   "vacancy": null,
   "available_from": null,
   "vacancy_source": "none",
-  "vacancy_updated_at": null
+  "vacancy_updated_at": null,
+  "tycg_id": "144",
+  "babycare_url": "https://babycare.tycg.gov.tw/#/org-detail/144",
+  "hours": null,
+  "night_care": false
  },
  {
   "id": "ty-107",
@@ -2244,7 +2644,11 @@
   "vacancy": null,
   "available_from": null,
   "vacancy_source": "none",
-  "vacancy_updated_at": null
+  "vacancy_updated_at": null,
+  "tycg_id": "150",
+  "babycare_url": "https://babycare.tycg.gov.tw/#/org-detail/150",
+  "hours": "",
+  "night_care": false
  },
  {
   "id": "ty-108",
@@ -2265,7 +2669,11 @@
   "vacancy": null,
   "available_from": null,
   "vacancy_source": "none",
-  "vacancy_updated_at": null
+  "vacancy_updated_at": null,
+  "tycg_id": "CW11210001",
+  "babycare_url": "https://babycare.tycg.gov.tw/#/org-detail/CW11210001",
+  "hours": "",
+  "night_care": false
  },
  {
   "id": "ty-109",
@@ -2286,7 +2694,11 @@
   "vacancy": null,
   "available_from": null,
   "vacancy_source": "none",
-  "vacancy_updated_at": null
+  "vacancy_updated_at": null,
+  "tycg_id": "CW11303010",
+  "babycare_url": "https://babycare.tycg.gov.tw/#/org-detail/CW11303010",
+  "hours": "",
+  "night_care": false
  },
  {
   "id": "ty-110",
@@ -2307,7 +2719,11 @@
   "vacancy": null,
   "available_from": null,
   "vacancy_source": "none",
-  "vacancy_updated_at": null
+  "vacancy_updated_at": null,
+  "tycg_id": "CW11308016",
+  "babycare_url": "https://babycare.tycg.gov.tw/#/org-detail/CW11308016",
+  "hours": "",
+  "night_care": false
  },
  {
   "id": "ty-111",
@@ -2328,7 +2744,11 @@
   "vacancy": null,
   "available_from": null,
   "vacancy_source": "none",
-  "vacancy_updated_at": null
+  "vacancy_updated_at": null,
+  "tycg_id": "29",
+  "babycare_url": "https://babycare.tycg.gov.tw/#/org-detail/29",
+  "hours": null,
+  "night_care": false
  },
  {
   "id": "ty-112",
@@ -2349,7 +2769,11 @@
   "vacancy": null,
   "available_from": null,
   "vacancy_source": "none",
-  "vacancy_updated_at": null
+  "vacancy_updated_at": null,
+  "tycg_id": "76",
+  "babycare_url": "https://babycare.tycg.gov.tw/#/org-detail/76",
+  "hours": null,
+  "night_care": false
  },
  {
   "id": "ty-113",
@@ -2370,7 +2794,11 @@
   "vacancy": null,
   "available_from": null,
   "vacancy_source": "none",
-  "vacancy_updated_at": null
+  "vacancy_updated_at": null,
+  "tycg_id": "100",
+  "babycare_url": "https://babycare.tycg.gov.tw/#/org-detail/100",
+  "hours": null,
+  "night_care": false
  },
  {
   "id": "ty-114",
@@ -2391,7 +2819,11 @@
   "vacancy": null,
   "available_from": null,
   "vacancy_source": "none",
-  "vacancy_updated_at": null
+  "vacancy_updated_at": null,
+  "tycg_id": "102",
+  "babycare_url": "https://babycare.tycg.gov.tw/#/org-detail/102",
+  "hours": null,
+  "night_care": false
  },
  {
   "id": "ty-115",
@@ -2412,7 +2844,11 @@
   "vacancy": null,
   "available_from": null,
   "vacancy_source": "none",
-  "vacancy_updated_at": null
+  "vacancy_updated_at": null,
+  "tycg_id": "111",
+  "babycare_url": "https://babycare.tycg.gov.tw/#/org-detail/111",
+  "hours": null,
+  "night_care": false
  },
  {
   "id": "ty-116",
@@ -2433,7 +2869,11 @@
   "vacancy": null,
   "available_from": null,
   "vacancy_source": "none",
-  "vacancy_updated_at": null
+  "vacancy_updated_at": null,
+  "tycg_id": "50158",
+  "babycare_url": "https://babycare.tycg.gov.tw/#/org-detail/50158",
+  "hours": null,
+  "night_care": false
  },
  {
   "id": "ty-117",
@@ -2454,7 +2894,11 @@
   "vacancy": null,
   "available_from": null,
   "vacancy_source": "none",
-  "vacancy_updated_at": null
+  "vacancy_updated_at": null,
+  "tycg_id": "50181",
+  "babycare_url": "https://babycare.tycg.gov.tw/#/org-detail/50181",
+  "hours": null,
+  "night_care": false
  },
  {
   "id": "ty-118",
@@ -2475,7 +2919,11 @@
   "vacancy": null,
   "available_from": null,
   "vacancy_source": "none",
-  "vacancy_updated_at": null
+  "vacancy_updated_at": null,
+  "tycg_id": "CW11112011",
+  "babycare_url": "https://babycare.tycg.gov.tw/#/org-detail/CW11112011",
+  "hours": "",
+  "night_care": false
  },
  {
   "id": "ty-119",
@@ -2496,7 +2944,11 @@
   "vacancy": null,
   "available_from": null,
   "vacancy_source": "none",
-  "vacancy_updated_at": null
+  "vacancy_updated_at": null,
+  "tycg_id": "CW11202005",
+  "babycare_url": "https://babycare.tycg.gov.tw/#/org-detail/CW11202005",
+  "hours": "",
+  "night_care": false
  },
  {
   "id": "ty-120",
@@ -2517,7 +2969,11 @@
   "vacancy": null,
   "available_from": null,
   "vacancy_source": "none",
-  "vacancy_updated_at": null
+  "vacancy_updated_at": null,
+  "tycg_id": "191",
+  "babycare_url": "https://babycare.tycg.gov.tw/#/org-detail/191",
+  "hours": "",
+  "night_care": false
  },
  {
   "id": "ty-121",
@@ -2538,7 +2994,11 @@
   "vacancy": null,
   "available_from": null,
   "vacancy_source": "none",
-  "vacancy_updated_at": null
+  "vacancy_updated_at": null,
+  "tycg_id": "0144",
+  "babycare_url": "https://babycare.tycg.gov.tw/#/org-detail/0144",
+  "hours": "",
+  "night_care": false
  },
  {
   "id": "ty-122",
@@ -2559,7 +3019,11 @@
   "vacancy": null,
   "available_from": null,
   "vacancy_source": "none",
-  "vacancy_updated_at": null
+  "vacancy_updated_at": null,
+  "tycg_id": "0145",
+  "babycare_url": "https://babycare.tycg.gov.tw/#/org-detail/0145",
+  "hours": "",
+  "night_care": false
  },
  {
   "id": "ty-123",
@@ -2580,7 +3044,11 @@
   "vacancy": null,
   "available_from": null,
   "vacancy_source": "none",
-  "vacancy_updated_at": null
+  "vacancy_updated_at": null,
+  "tycg_id": "32",
+  "babycare_url": "https://babycare.tycg.gov.tw/#/org-detail/32",
+  "hours": null,
+  "night_care": false
  },
  {
   "id": "ty-124",
@@ -2601,7 +3069,11 @@
   "vacancy": null,
   "available_from": null,
   "vacancy_source": "none",
-  "vacancy_updated_at": null
+  "vacancy_updated_at": null,
+  "tycg_id": "36",
+  "babycare_url": "https://babycare.tycg.gov.tw/#/org-detail/36",
+  "hours": null,
+  "night_care": false
  },
  {
   "id": "ty-125",
@@ -2622,7 +3094,11 @@
   "vacancy": null,
   "available_from": null,
   "vacancy_source": "none",
-  "vacancy_updated_at": null
+  "vacancy_updated_at": null,
+  "tycg_id": "45",
+  "babycare_url": "https://babycare.tycg.gov.tw/#/org-detail/45",
+  "hours": null,
+  "night_care": false
  },
  {
   "id": "ty-126",
@@ -2643,7 +3119,11 @@
   "vacancy": null,
   "available_from": null,
   "vacancy_source": "none",
-  "vacancy_updated_at": null
+  "vacancy_updated_at": null,
+  "tycg_id": "55",
+  "babycare_url": "https://babycare.tycg.gov.tw/#/org-detail/55",
+  "hours": null,
+  "night_care": false
  },
  {
   "id": "ty-127",
@@ -2664,7 +3144,11 @@
   "vacancy": null,
   "available_from": null,
   "vacancy_source": "none",
-  "vacancy_updated_at": null
+  "vacancy_updated_at": null,
+  "tycg_id": "58",
+  "babycare_url": "https://babycare.tycg.gov.tw/#/org-detail/58",
+  "hours": null,
+  "night_care": false
  },
  {
   "id": "ty-128",
@@ -2685,7 +3169,11 @@
   "vacancy": null,
   "available_from": null,
   "vacancy_source": "none",
-  "vacancy_updated_at": null
+  "vacancy_updated_at": null,
+  "tycg_id": "60",
+  "babycare_url": "https://babycare.tycg.gov.tw/#/org-detail/60",
+  "hours": null,
+  "night_care": false
  },
  {
   "id": "ty-129",
@@ -2706,7 +3194,11 @@
   "vacancy": null,
   "available_from": null,
   "vacancy_source": "none",
-  "vacancy_updated_at": null
+  "vacancy_updated_at": null,
+  "tycg_id": "61",
+  "babycare_url": "https://babycare.tycg.gov.tw/#/org-detail/61",
+  "hours": null,
+  "night_care": false
  },
  {
   "id": "ty-130",
@@ -2727,7 +3219,11 @@
   "vacancy": null,
   "available_from": null,
   "vacancy_source": "none",
-  "vacancy_updated_at": null
+  "vacancy_updated_at": null,
+  "tycg_id": "62",
+  "babycare_url": "https://babycare.tycg.gov.tw/#/org-detail/62",
+  "hours": null,
+  "night_care": false
  },
  {
   "id": "ty-131",
@@ -2748,7 +3244,11 @@
   "vacancy": null,
   "available_from": null,
   "vacancy_source": "none",
-  "vacancy_updated_at": null
+  "vacancy_updated_at": null,
+  "tycg_id": "64",
+  "babycare_url": "https://babycare.tycg.gov.tw/#/org-detail/64",
+  "hours": null,
+  "night_care": false
  },
  {
   "id": "ty-132",
@@ -2790,7 +3290,11 @@
   "vacancy": null,
   "available_from": null,
   "vacancy_source": "none",
-  "vacancy_updated_at": null
+  "vacancy_updated_at": null,
+  "tycg_id": "72",
+  "babycare_url": "https://babycare.tycg.gov.tw/#/org-detail/72",
+  "hours": null,
+  "night_care": false
  },
  {
   "id": "ty-134",
@@ -2811,7 +3315,11 @@
   "vacancy": null,
   "available_from": null,
   "vacancy_source": "none",
-  "vacancy_updated_at": null
+  "vacancy_updated_at": null,
+  "tycg_id": "96",
+  "babycare_url": "https://babycare.tycg.gov.tw/#/org-detail/96",
+  "hours": null,
+  "night_care": false
  },
  {
   "id": "ty-135",
@@ -2832,7 +3340,11 @@
   "vacancy": null,
   "available_from": null,
   "vacancy_source": "none",
-  "vacancy_updated_at": null
+  "vacancy_updated_at": null,
+  "tycg_id": "104",
+  "babycare_url": "https://babycare.tycg.gov.tw/#/org-detail/104",
+  "hours": null,
+  "night_care": false
  },
  {
   "id": "ty-136",
@@ -2853,7 +3365,11 @@
   "vacancy": null,
   "available_from": null,
   "vacancy_source": "none",
-  "vacancy_updated_at": null
+  "vacancy_updated_at": null,
+  "tycg_id": "112",
+  "babycare_url": "https://babycare.tycg.gov.tw/#/org-detail/112",
+  "hours": null,
+  "night_care": false
  },
  {
   "id": "ty-137",
@@ -2874,7 +3390,11 @@
   "vacancy": null,
   "available_from": null,
   "vacancy_source": "none",
-  "vacancy_updated_at": null
+  "vacancy_updated_at": null,
+  "tycg_id": "121",
+  "babycare_url": "https://babycare.tycg.gov.tw/#/org-detail/121",
+  "hours": null,
+  "night_care": false
  },
  {
   "id": "ty-138",
@@ -2895,7 +3415,11 @@
   "vacancy": null,
   "available_from": null,
   "vacancy_source": "none",
-  "vacancy_updated_at": null
+  "vacancy_updated_at": null,
+  "tycg_id": "50177",
+  "babycare_url": "https://babycare.tycg.gov.tw/#/org-detail/50177",
+  "hours": null,
+  "night_care": false
  },
  {
   "id": "ty-139",
@@ -2916,7 +3440,11 @@
   "vacancy": null,
   "available_from": null,
   "vacancy_source": "none",
-  "vacancy_updated_at": null
+  "vacancy_updated_at": null,
+  "tycg_id": "120*",
+  "babycare_url": "https://babycare.tycg.gov.tw/#/org-detail/120*",
+  "hours": "",
+  "night_care": false
  },
  {
   "id": "ty-140",
@@ -2937,7 +3465,11 @@
   "vacancy": null,
   "available_from": null,
   "vacancy_source": "none",
-  "vacancy_updated_at": null
+  "vacancy_updated_at": null,
+  "tycg_id": "11301241130019813",
+  "babycare_url": "https://babycare.tycg.gov.tw/#/org-detail/11301241130019813",
+  "hours": "",
+  "night_care": false
  },
  {
   "id": "ty-141",
@@ -2958,7 +3490,11 @@
   "vacancy": null,
   "available_from": null,
   "vacancy_source": "none",
-  "vacancy_updated_at": null
+  "vacancy_updated_at": null,
+  "tycg_id": "1130045991",
+  "babycare_url": "https://babycare.tycg.gov.tw/#/org-detail/1130045991",
+  "hours": "",
+  "night_care": false
  },
  {
   "id": "ty-142",
@@ -2979,7 +3515,11 @@
   "vacancy": null,
   "available_from": null,
   "vacancy_source": "none",
-  "vacancy_updated_at": null
+  "vacancy_updated_at": null,
+  "tycg_id": "0000236",
+  "babycare_url": "https://babycare.tycg.gov.tw/#/org-detail/0000236",
+  "hours": "",
+  "night_care": false
  },
  {
   "id": "ty-143",
@@ -3000,7 +3540,11 @@
   "vacancy": null,
   "available_from": null,
   "vacancy_source": "none",
-  "vacancy_updated_at": null
+  "vacancy_updated_at": null,
+  "tycg_id": "1130926",
+  "babycare_url": "https://babycare.tycg.gov.tw/#/org-detail/1130926",
+  "hours": "",
+  "night_care": false
  },
  {
   "id": "ty-144",
@@ -3021,7 +3565,11 @@
   "vacancy": null,
   "available_from": null,
   "vacancy_source": "none",
-  "vacancy_updated_at": null
+  "vacancy_updated_at": null,
+  "tycg_id": "44",
+  "babycare_url": "https://babycare.tycg.gov.tw/#/org-detail/44",
+  "hours": null,
+  "night_care": false
  },
  {
   "id": "ty-145",
@@ -3042,7 +3590,14 @@
   "vacancy": null,
   "available_from": null,
   "vacancy_source": "none",
-  "vacancy_updated_at": null
+  "vacancy_updated_at": null,
+  "tycg_id": "9",
+  "babycare_url": "https://babycare.tycg.gov.tw/#/org-detail/9",
+  "hours": "07:30-18:00",
+  "night_care": false,
+  "waiting_count": 20,
+  "waiting_year": "115",
+  "waiting_fetched": "2026-08-07"
  },
  {
   "id": "ty-146",
@@ -3063,7 +3618,14 @@
   "vacancy": null,
   "available_from": null,
   "vacancy_source": "none",
-  "vacancy_updated_at": null
+  "vacancy_updated_at": null,
+  "tycg_id": "12",
+  "babycare_url": "https://babycare.tycg.gov.tw/#/org-detail/12",
+  "hours": null,
+  "night_care": false,
+  "waiting_count": 69,
+  "waiting_year": "115",
+  "waiting_fetched": "2026-08-07"
  },
  {
   "id": "ty-147",
@@ -3084,7 +3646,14 @@
   "vacancy": null,
   "available_from": null,
   "vacancy_source": "none",
-  "vacancy_updated_at": null
+  "vacancy_updated_at": null,
+  "tycg_id": "50169",
+  "babycare_url": "https://babycare.tycg.gov.tw/#/org-detail/50169",
+  "hours": "07：30 至 18：00",
+  "night_care": false,
+  "waiting_count": 73,
+  "waiting_year": "115",
+  "waiting_fetched": "2026-08-07"
  },
  {
   "id": "ty-148",
@@ -3105,7 +3674,14 @@
   "vacancy": null,
   "available_from": null,
   "vacancy_source": "none",
-  "vacancy_updated_at": null
+  "vacancy_updated_at": null,
+  "tycg_id": "CW11203016",
+  "babycare_url": "https://babycare.tycg.gov.tw/#/org-detail/CW11203016",
+  "hours": "上課時間：7:30-18:00",
+  "night_care": false,
+  "waiting_count": 112,
+  "waiting_year": "115",
+  "waiting_fetched": "2026-08-07"
  },
  {
   "id": "ty-149",
@@ -3126,7 +3702,14 @@
   "vacancy": null,
   "available_from": null,
   "vacancy_source": "none",
-  "vacancy_updated_at": null
+  "vacancy_updated_at": null,
+  "tycg_id": "3",
+  "babycare_url": "https://babycare.tycg.gov.tw/#/org-detail/3",
+  "hours": "收托時間：周一至周五 7:30-18:00",
+  "night_care": false,
+  "waiting_count": 73,
+  "waiting_year": "115",
+  "waiting_fetched": "2026-08-07"
  },
  {
   "id": "ty-150",
@@ -3147,7 +3730,14 @@
   "vacancy": null,
   "available_from": null,
   "vacancy_source": "none",
-  "vacancy_updated_at": null
+  "vacancy_updated_at": null,
+  "tycg_id": "8",
+  "babycare_url": "https://babycare.tycg.gov.tw/#/org-detail/8",
+  "hours": "07:30~18:00",
+  "night_care": false,
+  "waiting_count": 65,
+  "waiting_year": "115",
+  "waiting_fetched": "2026-08-07"
  },
  {
   "id": "ty-151",
@@ -3168,7 +3758,14 @@
   "vacancy": null,
   "available_from": null,
   "vacancy_source": "none",
-  "vacancy_updated_at": null
+  "vacancy_updated_at": null,
+  "tycg_id": "2",
+  "babycare_url": "https://babycare.tycg.gov.tw/#/org-detail/2",
+  "hours": "周一~周五",
+  "night_care": false,
+  "waiting_count": 44,
+  "waiting_year": "115",
+  "waiting_fetched": "2026-08-07"
  },
  {
   "id": "ty-152",
@@ -3210,7 +3807,14 @@
   "vacancy": null,
   "available_from": null,
   "vacancy_source": "none",
-  "vacancy_updated_at": null
+  "vacancy_updated_at": null,
+  "tycg_id": "143",
+  "babycare_url": "https://babycare.tycg.gov.tw/#/org-detail/143",
+  "hours": "週一至週五，上午7:30-下午7:00",
+  "night_care": false,
+  "waiting_count": 114,
+  "waiting_year": "115",
+  "waiting_fetched": "2026-08-07"
  },
  {
   "id": "ty-154",
@@ -3231,7 +3835,14 @@
   "vacancy": null,
   "available_from": null,
   "vacancy_source": "none",
-  "vacancy_updated_at": null
+  "vacancy_updated_at": null,
+  "tycg_id": "50167",
+  "babycare_url": "https://babycare.tycg.gov.tw/#/org-detail/50167",
+  "hours": "7:30-19:30",
+  "night_care": false,
+  "waiting_count": 89,
+  "waiting_year": "115",
+  "waiting_fetched": "2026-08-07"
  },
  {
   "id": "ty-155",
@@ -3252,7 +3863,14 @@
   "vacancy": null,
   "available_from": null,
   "vacancy_source": "none",
-  "vacancy_updated_at": null
+  "vacancy_updated_at": null,
+  "tycg_id": "50173",
+  "babycare_url": "https://babycare.tycg.gov.tw/#/org-detail/50173",
+  "hours": "7:30-19:00",
+  "night_care": false,
+  "waiting_count": 75,
+  "waiting_year": "115",
+  "waiting_fetched": "2026-08-07"
  },
  {
   "id": "ty-156",
@@ -3273,7 +3891,14 @@
   "vacancy": null,
   "available_from": null,
   "vacancy_source": "none",
-  "vacancy_updated_at": null
+  "vacancy_updated_at": null,
+  "tycg_id": "50180",
+  "babycare_url": "https://babycare.tycg.gov.tw/#/org-detail/50180",
+  "hours": "7:30~18:00",
+  "night_care": false,
+  "waiting_count": 53,
+  "waiting_year": "115",
+  "waiting_fetched": "2026-08-07"
  },
  {
   "id": "ty-157",
@@ -3294,7 +3919,14 @@
   "vacancy": null,
   "available_from": null,
   "vacancy_source": "none",
-  "vacancy_updated_at": null
+  "vacancy_updated_at": null,
+  "tycg_id": "15",
+  "babycare_url": "https://babycare.tycg.gov.tw/#/org-detail/15",
+  "hours": "9:00-18:00",
+  "night_care": false,
+  "waiting_count": 42,
+  "waiting_year": "115",
+  "waiting_fetched": "2026-08-07"
  },
  {
   "id": "ty-158",
@@ -3315,7 +3947,14 @@
   "vacancy": null,
   "available_from": null,
   "vacancy_source": "none",
-  "vacancy_updated_at": null
+  "vacancy_updated_at": null,
+  "tycg_id": "21",
+  "babycare_url": "https://babycare.tycg.gov.tw/#/org-detail/21",
+  "hours": null,
+  "night_care": false,
+  "waiting_count": 20,
+  "waiting_year": "115",
+  "waiting_fetched": "2026-08-07"
  },
  {
   "id": "ty-159",
@@ -3336,7 +3975,14 @@
   "vacancy": null,
   "available_from": null,
   "vacancy_source": "none",
-  "vacancy_updated_at": null
+  "vacancy_updated_at": null,
+  "tycg_id": "30143",
+  "babycare_url": "https://babycare.tycg.gov.tw/#/org-detail/30143",
+  "hours": "週一至週五",
+  "night_care": false,
+  "waiting_count": 5,
+  "waiting_year": "115",
+  "waiting_fetched": "2026-08-07"
  },
  {
   "id": "ty-160",
@@ -3357,7 +4003,14 @@
   "vacancy": null,
   "available_from": null,
   "vacancy_source": "none",
-  "vacancy_updated_at": null
+  "vacancy_updated_at": null,
+  "tycg_id": "40150",
+  "babycare_url": "https://babycare.tycg.gov.tw/#/org-detail/40150",
+  "hours": "7:30~18:00",
+  "night_care": false,
+  "waiting_count": 70,
+  "waiting_year": "115",
+  "waiting_fetched": "2026-08-07"
  },
  {
   "id": "ty-161",
@@ -3378,7 +4031,14 @@
   "vacancy": null,
   "available_from": null,
   "vacancy_source": "none",
-  "vacancy_updated_at": null
+  "vacancy_updated_at": null,
+  "tycg_id": "CW11304001",
+  "babycare_url": "https://babycare.tycg.gov.tw/#/org-detail/CW11304001",
+  "hours": "07:30-18:00",
+  "night_care": false,
+  "waiting_count": 90,
+  "waiting_year": "115",
+  "waiting_fetched": "2026-08-07"
  },
  {
   "id": "ty-162",
@@ -3399,7 +4059,14 @@
   "vacancy": null,
   "available_from": null,
   "vacancy_source": "none",
-  "vacancy_updated_at": null
+  "vacancy_updated_at": null,
+  "tycg_id": "10",
+  "babycare_url": "https://babycare.tycg.gov.tw/#/org-detail/10",
+  "hours": "上課時間：7:30-18:00",
+  "night_care": false,
+  "waiting_count": 216,
+  "waiting_year": "115",
+  "waiting_fetched": "2026-08-07"
  },
  {
   "id": "ty-163",
@@ -3420,7 +4087,14 @@
   "vacancy": null,
   "available_from": null,
   "vacancy_source": "none",
-  "vacancy_updated_at": null
+  "vacancy_updated_at": null,
+  "tycg_id": "CW11211001",
+  "babycare_url": "https://babycare.tycg.gov.tw/#/org-detail/CW11211001",
+  "hours": "7:30-18:00",
+  "night_care": false,
+  "waiting_count": 67,
+  "waiting_year": "115",
+  "waiting_fetched": "2026-08-07"
  },
  {
   "id": "ty-164",
@@ -3441,7 +4115,14 @@
   "vacancy": null,
   "available_from": null,
   "vacancy_source": "none",
-  "vacancy_updated_at": null
+  "vacancy_updated_at": null,
+  "tycg_id": "C46",
+  "babycare_url": "https://babycare.tycg.gov.tw/#/org-detail/C46",
+  "hours": "7:30~18:00",
+  "night_care": false,
+  "waiting_count": 58,
+  "waiting_year": "115",
+  "waiting_fetched": "2026-08-07"
  },
  {
   "id": "ty-165",
@@ -3462,7 +4143,14 @@
   "vacancy": null,
   "available_from": null,
   "vacancy_source": "none",
-  "vacancy_updated_at": null
+  "vacancy_updated_at": null,
+  "tycg_id": "C47",
+  "babycare_url": "https://babycare.tycg.gov.tw/#/org-detail/C47",
+  "hours": "7:30~18:00",
+  "night_care": false,
+  "waiting_count": 94,
+  "waiting_year": "115",
+  "waiting_fetched": "2026-08-07"
  },
  {
   "id": "ty-166",
@@ -3483,7 +4171,14 @@
   "vacancy": null,
   "available_from": null,
   "vacancy_source": "none",
-  "vacancy_updated_at": null
+  "vacancy_updated_at": null,
+  "tycg_id": "14",
+  "babycare_url": "https://babycare.tycg.gov.tw/#/org-detail/14",
+  "hours": "週一至週五8:00-18:00",
+  "night_care": false,
+  "waiting_count": 90,
+  "waiting_year": "115",
+  "waiting_fetched": "2026-08-07"
  },
  {
   "id": "ty-167",
@@ -3504,7 +4199,14 @@
   "vacancy": null,
   "available_from": null,
   "vacancy_source": "none",
-  "vacancy_updated_at": null
+  "vacancy_updated_at": null,
+  "tycg_id": "40165",
+  "babycare_url": "https://babycare.tycg.gov.tw/#/org-detail/40165",
+  "hours": "星期一~星期五早上7：30~18：00",
+  "night_care": false,
+  "waiting_count": 67,
+  "waiting_year": "115",
+  "waiting_fetched": "2026-08-07"
  },
  {
   "id": "ty-168",
@@ -3525,7 +4227,14 @@
   "vacancy": null,
   "available_from": null,
   "vacancy_source": "none",
-  "vacancy_updated_at": null
+  "vacancy_updated_at": null,
+  "tycg_id": "4",
+  "babycare_url": "https://babycare.tycg.gov.tw/#/org-detail/4",
+  "hours": "平日07:30~19:00",
+  "night_care": false,
+  "waiting_count": 73,
+  "waiting_year": "115",
+  "waiting_fetched": "2026-08-07"
  },
  {
   "id": "ty-169",
@@ -3546,7 +4255,14 @@
   "vacancy": null,
   "available_from": null,
   "vacancy_source": "none",
-  "vacancy_updated_at": null
+  "vacancy_updated_at": null,
+  "tycg_id": "7",
+  "babycare_url": "https://babycare.tycg.gov.tw/#/org-detail/7",
+  "hours": "週一至週五 07：30-18：00",
+  "night_care": false,
+  "waiting_count": 85,
+  "waiting_year": "115",
+  "waiting_fetched": "2026-08-07"
  },
  {
   "id": "ty-170",
@@ -3567,7 +4283,14 @@
   "vacancy": null,
   "available_from": null,
   "vacancy_source": "none",
-  "vacancy_updated_at": null
+  "vacancy_updated_at": null,
+  "tycg_id": "c45",
+  "babycare_url": "https://babycare.tycg.gov.tw/#/org-detail/c45",
+  "hours": "週一至週五07：30 - 18：00 ；來電時間09：00 - 17：00 ",
+  "night_care": false,
+  "waiting_count": 56,
+  "waiting_year": "115",
+  "waiting_fetched": "2026-08-07"
  },
  {
   "id": "ty-171",
@@ -3588,7 +4311,14 @@
   "vacancy": null,
   "available_from": null,
   "vacancy_source": "none",
-  "vacancy_updated_at": null
+  "vacancy_updated_at": null,
+  "tycg_id": "A54",
+  "babycare_url": "https://babycare.tycg.gov.tw/#/org-detail/A54",
+  "hours": "週一至周五07:30-18:00",
+  "night_care": false,
+  "waiting_count": 72,
+  "waiting_year": "115",
+  "waiting_fetched": "2026-08-07"
  },
  {
   "id": "ty-172",
@@ -3609,7 +4339,14 @@
   "vacancy": null,
   "available_from": null,
   "vacancy_source": "none",
-  "vacancy_updated_at": null
+  "vacancy_updated_at": null,
+  "tycg_id": "1",
+  "babycare_url": "https://babycare.tycg.gov.tw/#/org-detail/1",
+  "hours": "周一~周五，7:30-18:00",
+  "night_care": false,
+  "waiting_count": 87,
+  "waiting_year": "115",
+  "waiting_fetched": "2026-08-07"
  },
  {
   "id": "ty-173",
@@ -3630,7 +4367,14 @@
   "vacancy": null,
   "available_from": null,
   "vacancy_source": "none",
-  "vacancy_updated_at": null
+  "vacancy_updated_at": null,
+  "tycg_id": "125",
+  "babycare_url": "https://babycare.tycg.gov.tw/#/org-detail/125",
+  "hours": "週一~週五，07:30-18:30",
+  "night_care": false,
+  "waiting_count": 104,
+  "waiting_year": "115",
+  "waiting_fetched": "2026-08-07"
  },
  {
   "id": "ty-174",
@@ -3651,7 +4395,14 @@
   "vacancy": null,
   "available_from": null,
   "vacancy_source": "none",
-  "vacancy_updated_at": null
+  "vacancy_updated_at": null,
+  "tycg_id": "5",
+  "babycare_url": "https://babycare.tycg.gov.tw/#/org-detail/5",
+  "hours": "【收托】週一～週五 07：30～18：00(依人事行政局規定)【登記】週一～週五 09：00～16：00",
+  "night_care": false,
+  "waiting_count": 57,
+  "waiting_year": "115",
+  "waiting_fetched": "2026-08-07"
  },
  {
   "id": "ty-175",
@@ -3672,7 +4423,14 @@
   "vacancy": null,
   "available_from": null,
   "vacancy_source": "none",
-  "vacancy_updated_at": null
+  "vacancy_updated_at": null,
+  "tycg_id": "140",
+  "babycare_url": "https://babycare.tycg.gov.tw/#/org-detail/140",
+  "hours": "周一至周五7:30-18:00",
+  "night_care": false,
+  "waiting_count": 43,
+  "waiting_year": "115",
+  "waiting_fetched": "2026-08-07"
  },
  {
   "id": "ty-176",
@@ -3693,7 +4451,14 @@
   "vacancy": null,
   "available_from": null,
   "vacancy_source": "none",
-  "vacancy_updated_at": null
+  "vacancy_updated_at": null,
+  "tycg_id": "22",
+  "babycare_url": "https://babycare.tycg.gov.tw/#/org-detail/22",
+  "hours": "周一至周五 07:30~18:00",
+  "night_care": false,
+  "waiting_count": 7,
+  "waiting_year": "115",
+  "waiting_fetched": "2026-08-07"
  },
  {
   "id": "ty-177",
@@ -3714,7 +4479,14 @@
   "vacancy": null,
   "available_from": null,
   "vacancy_source": "none",
-  "vacancy_updated_at": null
+  "vacancy_updated_at": null,
+  "tycg_id": "23",
+  "babycare_url": "https://babycare.tycg.gov.tw/#/org-detail/23",
+  "hours": "7:30~18:00",
+  "night_care": false,
+  "waiting_count": 61,
+  "waiting_year": "115",
+  "waiting_fetched": "2026-08-07"
  },
  {
   "id": "ty-178",
@@ -3735,7 +4507,14 @@
   "vacancy": null,
   "available_from": null,
   "vacancy_source": "none",
-  "vacancy_updated_at": null
+  "vacancy_updated_at": null,
+  "tycg_id": "6",
+  "babycare_url": "https://babycare.tycg.gov.tw/#/org-detail/6",
+  "hours": "07：30-18：00",
+  "night_care": false,
+  "waiting_count": 63,
+  "waiting_year": "115",
+  "waiting_fetched": "2026-08-07"
  },
  {
   "id": "ty-179",
@@ -3756,7 +4535,14 @@
   "vacancy": null,
   "available_from": null,
   "vacancy_source": "none",
-  "vacancy_updated_at": null
+  "vacancy_updated_at": null,
+  "tycg_id": "30146",
+  "babycare_url": "https://babycare.tycg.gov.tw/#/org-detail/30146",
+  "hours": "週一至週五早上7:30-18:00",
+  "night_care": false,
+  "waiting_count": 109,
+  "waiting_year": "115",
+  "waiting_fetched": "2026-08-07"
  },
  {
   "id": "ty-180",
@@ -3777,7 +4563,14 @@
   "vacancy": null,
   "available_from": null,
   "vacancy_source": "none",
-  "vacancy_updated_at": null
+  "vacancy_updated_at": null,
+  "tycg_id": "NO 49",
+  "babycare_url": "https://babycare.tycg.gov.tw/#/org-detail/NO 49",
+  "hours": "週一至週五上午7時30分至下午6時00分",
+  "night_care": false,
+  "waiting_count": 127,
+  "waiting_year": "115",
+  "waiting_fetched": "2026-08-07"
  },
  {
   "id": "ty-181",
@@ -3798,7 +4591,14 @@
   "vacancy": null,
   "available_from": null,
   "vacancy_source": "none",
-  "vacancy_updated_at": null
+  "vacancy_updated_at": null,
+  "tycg_id": "19",
+  "babycare_url": "https://babycare.tycg.gov.tw/#/org-detail/19",
+  "hours": "07:30-18:00",
+  "night_care": false,
+  "waiting_count": 40,
+  "waiting_year": "115",
+  "waiting_fetched": "2026-08-07"
  },
  {
   "id": "ty-182",
@@ -3819,7 +4619,11 @@
   "vacancy": null,
   "available_from": null,
   "vacancy_source": "none",
-  "vacancy_updated_at": null
+  "vacancy_updated_at": null,
+  "tycg_id": "18",
+  "babycare_url": "https://babycare.tycg.gov.tw/#/org-detail/18",
+  "hours": "07:30-18:00",
+  "night_care": false
  },
  {
   "id": "ty-183",
@@ -3840,7 +4644,11 @@
   "vacancy": null,
   "available_from": null,
   "vacancy_source": "none",
-  "vacancy_updated_at": null
+  "vacancy_updated_at": null,
+  "tycg_id": "40155",
+  "babycare_url": "https://babycare.tycg.gov.tw/#/org-detail/40155",
+  "hours": "07:30-18:00",
+  "night_care": false
  },
  {
   "id": "ty-184",
@@ -3861,7 +4669,11 @@
   "vacancy": null,
   "available_from": null,
   "vacancy_source": "none",
-  "vacancy_updated_at": null
+  "vacancy_updated_at": null,
+  "tycg_id": "16",
+  "babycare_url": "https://babycare.tycg.gov.tw/#/org-detail/16",
+  "hours": null,
+  "night_care": false
  },
  {
   "id": "ty-185",
@@ -3882,7 +4694,11 @@
   "vacancy": null,
   "available_from": null,
   "vacancy_source": "none",
-  "vacancy_updated_at": null
+  "vacancy_updated_at": null,
+  "tycg_id": "17",
+  "babycare_url": "https://babycare.tycg.gov.tw/#/org-detail/17",
+  "hours": "7:30-18:00",
+  "night_care": false
  },
  {
   "id": "ty-186",
@@ -3903,7 +4719,11 @@
   "vacancy": null,
   "available_from": null,
   "vacancy_source": "none",
-  "vacancy_updated_at": null
+  "vacancy_updated_at": null,
+  "tycg_id": "20",
+  "babycare_url": "https://babycare.tycg.gov.tw/#/org-detail/20",
+  "hours": "7:30-18:00",
+  "night_care": false
  },
  {
   "id": "ty-187",
@@ -3924,7 +4744,11 @@
   "vacancy": null,
   "available_from": null,
   "vacancy_source": "none",
-  "vacancy_updated_at": null
+  "vacancy_updated_at": null,
+  "tycg_id": "13",
+  "babycare_url": "https://babycare.tycg.gov.tw/#/org-detail/13",
+  "hours": "7:30-18:00",
+  "night_care": false
  },
  {
   "id": "ty-188",
@@ -3945,7 +4769,11 @@
   "vacancy": null,
   "available_from": null,
   "vacancy_source": "none",
-  "vacancy_updated_at": null
+  "vacancy_updated_at": null,
+  "tycg_id": "10141",
+  "babycare_url": "https://babycare.tycg.gov.tw/#/org-detail/10141",
+  "hours": "7：30至18：00",
+  "night_care": false
  },
  {
   "id": "ty-189",
@@ -3966,7 +4794,11 @@
   "vacancy": null,
   "available_from": null,
   "vacancy_source": "none",
-  "vacancy_updated_at": null
+  "vacancy_updated_at": null,
+  "tycg_id": "50166",
+  "babycare_url": "https://babycare.tycg.gov.tw/#/org-detail/50166",
+  "hours": "7:30-18:00 ",
+  "night_care": false
  },
  {
   "id": "ty-190",
@@ -3987,7 +4819,11 @@
   "vacancy": null,
   "available_from": null,
   "vacancy_source": "none",
-  "vacancy_updated_at": null
+  "vacancy_updated_at": null,
+  "tycg_id": "148",
+  "babycare_url": "https://babycare.tycg.gov.tw/#/org-detail/148",
+  "hours": "週一至週五 07：30-18：00",
+  "night_care": false
  },
  {
   "id": "ty-191",
@@ -4008,7 +4844,11 @@
   "vacancy": null,
   "available_from": null,
   "vacancy_source": "none",
-  "vacancy_updated_at": null
+  "vacancy_updated_at": null,
+  "tycg_id": "CW11210004",
+  "babycare_url": "https://babycare.tycg.gov.tw/#/org-detail/CW11210004",
+  "hours": "週一至週五；上午 7 時 30 分至下午 6 時。",
+  "night_care": false
  },
  {
   "id": "ty-192",
@@ -4029,7 +4869,11 @@
   "vacancy": null,
   "available_from": null,
   "vacancy_source": "none",
-  "vacancy_updated_at": null
+  "vacancy_updated_at": null,
+  "tycg_id": "30144",
+  "babycare_url": "https://babycare.tycg.gov.tw/#/org-detail/30144",
+  "hours": "週一至週五 上午07:30至下午18:00",
+  "night_care": false
  },
  {
   "id": "ty-193",
@@ -4050,7 +4894,11 @@
   "vacancy": null,
   "available_from": null,
   "vacancy_source": "none",
-  "vacancy_updated_at": null
+  "vacancy_updated_at": null,
+  "tycg_id": "20145",
+  "babycare_url": "https://babycare.tycg.gov.tw/#/org-detail/20145",
+  "hours": null,
+  "night_care": false
  },
  {
   "id": "ty-194",
@@ -4071,6 +4919,10 @@
   "vacancy": null,
   "available_from": null,
   "vacancy_source": "none",
-  "vacancy_updated_at": null
+  "vacancy_updated_at": null,
+  "tycg_id": "CW11209010",
+  "babycare_url": "https://babycare.tycg.gov.tw/#/org-detail/CW11209010",
+  "hours": "上午7點30分至傍晚6點00分",
+  "night_care": false
  }
 ]

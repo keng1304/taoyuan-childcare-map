@@ -18,6 +18,7 @@ python3 scripts/pipeline.py all   # 抓最新名冊 → 清洗 → geocode（有
 |---|---|---|
 | 托嬰中心名冊（194 家，含評鑑/月費/核定床位） | 桃園市開放資料 dataset 168379 | 政府資料開放授權條款 v1 |
 | 準公共化名冊 | dataset 168385 | 同上 |
+| 官方座標／收托時間／公設民營候補人數 | 桃園育兒資源網公開 API（babycare.tycg.gov.tw，`pipeline.py tycg` 抓取） | 公開網站資料，標示來源與抓取日期 |
 | 行政區界 | g0v/twgeojson | CC0 |
 
 原始 CSV 快照存 `data/raw/`（帶日期戳，可追溯、防來源下架）。

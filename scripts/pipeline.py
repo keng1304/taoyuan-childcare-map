@@ -181,7 +181,7 @@ def build():
     feats, miss = [], []
     for f in facil:
         hit = cache.get(clean_addr(f["address"]), {})
-        if hit.get("precision") in ("exact", "street", "manual"):
+        if hit.get("precision") in ("official", "exact", "street", "manual"):
             props = dict(f); props["geo_precision"] = hit["precision"]
             feats.append({"type": "Feature",
                           "geometry": {"type": "Point", "coordinates": [hit["lon"], hit["lat"]]},
@@ -199,7 +199,109 @@ def build():
     for m in miss[:20]:
         print("  miss:", m)
 
+TYCG_API = "https://babycare.tycg.gov.tw"
+TYCG_RAW = None  # set in tycg()
+
+# 走 curl 而非 urllib：tycg.gov.tw 憑證缺 Subject Key Identifier，
+# Python 3.13+ 嚴格驗證會拒收（curl/瀏覽器可接受）。不降級 SSL 驗證。
+import subprocess
+
+def _tycg_get(path):
+    r = subprocess.run(["curl", "-s", "--max-time", "20", "-A", UA, TYCG_API + path],
+                       capture_output=True, text=True, check=True)
+    return json.loads(r.stdout)
+
+def _tycg_post(path, body):
+    r = subprocess.run(["curl", "-s", "--max-time", "20", "-A", UA, "-X", "POST",
+                        "-H", "Content-Type: application/json", "-d", json.dumps(body),
+                        TYCG_API + path], capture_output=True, text=True, check=True)
+    return json.loads(r.stdout)
+
+def tycg(today=None):
+    """抓桃園育兒資源網公開 API（2026-08-07 發現）：全量托嬰中心官方座標＋
+    收托時間＋公設民營候補名單。輸出 data/raw/tycg_api_{date}.json 供 build 合併。"""
+    import datetime
+    today = today or datetime.date.today().isoformat()
+    orgs = _tycg_post("/api/VMapCare/List", {"org_type": ""})
+    print(f"tycg: VMapCare {len(orgs)} orgs")
+    out = {"fetched": today, "orgs": {}}
+    for n, o in enumerate(orgs, 1):
+        oid = str(o["id"])
+        rec = {"name": o["org_name"], "type": o.get("type"),
+               "lat": float(o["latitude"]) if o.get("latitude") else None,
+               "lon": float(o["longitude"]) if o.get("longitude") else None}
+        try:
+            d = _tycg_get(f"/api/DeptOrg/Detail?id={urllib.parse.quote(oid)}")
+            rec["hours"] = d.get("org_hours")
+            rec["cap_num"] = d.get("cap_num")
+            if o.get("type") == "01":  # 公設民營才有候補系統
+                try:
+                    sy = _tycg_get(f"/api/CareSetting/getSchoolYear?org_id={urllib.parse.quote(oid)}")
+                    year = str(sy if isinstance(sy, (str, int)) else sy.get("school_year", "115"))
+                except Exception:
+                    year = "115"
+                try:
+                    wl = _tycg_get(f"/api/VCareWaiting/List?org_id={urllib.parse.quote(oid)}&school_year={year}")
+                    rec["waiting"] = {"year": year, "count": len(wl)}
+                except Exception:
+                    pass
+        except Exception as e:
+            print(f"  ! detail {oid}: {e}")
+        out["orgs"][oid] = rec
+        if n % 40 == 0:
+            print(f"  {n}/{len(orgs)}")
+        time.sleep(0.25)
+    p = RAW / f"tycg_api_{today}.json"
+    p.write_text(json.dumps(out, ensure_ascii=False), "utf-8")
+    print(f"tycg: saved {p.name}")
+
+def _hours_end(hours):
+    """回傳收托結束時間（24h 浮點），解析失敗回 None。「下午7:00」→19.0"""
+    if not hours:
+        return None
+    m = re.search(r"(上午|下午|晚上)?\s*(\d{1,2}):(\d{2})\s*$", hours.strip())
+    if not m:
+        return None
+    h = int(m.group(2)) + int(m.group(3)) / 60
+    if m.group(1) in ("下午", "晚上") and h < 12:
+        h += 12
+    return h
+
+def enrich():
+    """把 tycg API 資料合併進 facilities.json（名稱正規化比對）。
+    官方座標寫入 geocode cache（precision=official，蓋過 Nominatim）。"""
+    files = sorted(RAW.glob("tycg_api_*.json"))
+    if not files:
+        sys.exit("no tycg raw; run: pipeline.py tycg")
+    api = json.loads(files[-1].read_text("utf-8"))
+    facil = json.loads(FACIL.read_text("utf-8"))
+    cache = json.loads(CACHE.read_text("utf-8")) if CACHE.exists() else {}
+    norm = lambda s: re.sub(r"桃園市|私立|公設民營|托嬰中心|\s", "", s or "")
+    by_name = {norm(v["name"]): (k, v) for k, v in api["orgs"].items()}
+    hit = 0
+    for f in facil:
+        m = by_name.get(norm(f["name"]))
+        if not m:
+            continue
+        oid, rec = m
+        hit += 1
+        f["tycg_id"] = oid
+        f["babycare_url"] = f"https://babycare.tycg.gov.tw/#/org-detail/{oid}"
+        f["hours"] = rec.get("hours")
+        end = _hours_end(rec.get("hours"))
+        f["night_care"] = (end is not None and end >= 20)
+        if rec.get("waiting"):
+            f["waiting_count"] = rec["waiting"]["count"]
+            f["waiting_year"] = rec["waiting"]["year"]
+            f["waiting_fetched"] = api["fetched"]
+        if rec.get("lat") and rec.get("lon"):
+            cache[clean_addr(f["address"])] = {"lat": rec["lat"], "lon": rec["lon"],
+                                               "precision": "official", "display": "桃園育兒資源網官方座標"}
+    CACHE.write_text(json.dumps(cache, ensure_ascii=False, indent=0), "utf-8")
+    FACIL.write_text(json.dumps(facil, ensure_ascii=False, indent=1), "utf-8")
+    print(f"enrich: matched {hit}/{len(facil)} facilities to tycg api")
+
 if __name__ == "__main__":
     cmd = sys.argv[1] if len(sys.argv) > 1 else "all"
-    {"parse": parse, "geocode": geocode, "build": build,
+    {"parse": parse, "geocode": geocode, "build": build, "tycg": tycg, "enrich": enrich,
      "all": lambda: (parse(), geocode(), build())}[cmd]()

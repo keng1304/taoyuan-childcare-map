@@ -91,6 +91,7 @@ footer a{color:var(--primary)}
   <span class="chip" id="fQuasi">準公共</span>
   <span class="chip off" title="幼兒園圖層整合中（教育部資料源）">幼兒園（整合中）</span>
   <select id="fGrade"><option value="">評鑑不限</option><option>優</option><option>甲</option><option>乙</option><option>丙</option></select>
+  <span class="chip" id="fNight">夜間托育</span>
   <span class="chip demo-only" id="fVacancy">只看有空位</span>
   <span class="chip" id="locBtn">📍 離我最近</span>
 </div>
@@ -106,7 +107,7 @@ footer a{color:var(--primary)}
 <script>
 const DEMO = new URLSearchParams(location.search).get('demo') === '1';
 if (DEMO) document.body.classList.add('demo');
-const state = { district:'', type:'', quasi:false, grade:'', vacancyOnly:false, userLoc:null };
+const state = { district:'', type:'', quasi:false, grade:'', vacancyOnly:false, night:false, userLoc:null };
 let facilities = [], missing = [], markers = {}, map;
 
 // —— demo 示意空位：以 id 決定、確定性（同一機構每次一樣），明標示意 ——
@@ -143,6 +144,7 @@ function bindTools(){
     c.classList.add('on'); state.type = c.dataset.type; render();
   });
   fQuasi.onclick = () => { state.quasi = !state.quasi; fQuasi.classList.toggle('on'); render(); };
+  fNight.onclick = () => { state.night = !state.night; fNight.classList.toggle('on'); render(); };
   fVacancy.onclick = () => { state.vacancyOnly = !state.vacancyOnly; fVacancy.classList.toggle('on'); render(); };
   locBtn.onclick = () => navigator.geolocation?.getCurrentPosition(p => {
     state.userLoc = [p.coords.latitude, p.coords.longitude];
@@ -161,6 +163,7 @@ function pass(f){
   if (state.type && f.type !== state.type) return false;
   if (state.quasi && !f.quasi_public) return false;
   if (state.grade && f.grade !== state.grade) return false;
+  if (state.night && !f.night_care) return false;
   if (DEMO && state.vacancyOnly && demoVacancy(f.id).status !== 'open') return false;
   return true;
 }
@@ -183,11 +186,17 @@ function render(){
     missShown.map(f => cardHTML(f, false)).join('');
   listArr.forEach(f => document.getElementById('lc-' + f.id).onclick = () => { openCard(f); if (innerWidth < 900) { document.body.classList.remove('showlist'); viewToggle.textContent='☰ 清單'; } map.setView([f.lat,f.lon],16); });
   missShown.forEach(f => document.getElementById('lc-' + f.id).onclick = () => openCard(f));
-  count.textContent = `顯示 ${shown.length} 家` + (missShown.length ? `＋${missShown.length} 家位置校正中（見清單）` : '');
+  count.textContent = (state.night && shown.length === 0)
+    ? '0 家——桃園目前無夜間托育服務（依各機構登載之收托時間）'
+    : `顯示 ${shown.length} 家` + (missShown.length ? `＋${missShown.length} 家位置校正中（見清單）` : '');
 }
 
+function waitingBadge(f){
+  if (f.waiting_count == null) return '';
+  return `<i class="b-full">候補 ${f.waiting_count} 人</i><i class="b-ts">${f.waiting_year}學年・育兒資源網 ${f.waiting_fetched}</i>`;
+}
 function vacancyBadge(f){
-  if (!DEMO) return `<i class="b-ts">核定 ${f.beds_approved} 床｜即時空位尚未開放</i>`;
+  if (!DEMO) return `<i class="b-ts">核定 ${f.beds_approved} 床｜即時空位尚未開放</i>` + waitingBadge(f);
   const v = demoVacancy(f.id);
   if (v.status === 'open') return `<i class="b-open">有空位 ${v.slots} 名・${v.from} 起</i><i class="b-ts">更新於 ${v.hours} 小時前・示意</i>`;
   if (v.status === 'full') return `<i class="b-full">額滿</i><i class="b-ts">更新於 ${v.hours} 小時前・示意</i>`;
@@ -208,6 +217,8 @@ function openCard(f){
     <div class="badges">${f.grade ? `<i class="b-grade">評鑑 ${f.grade_raw}</i>` : '<i class="b-pending">尚未評鑑</i>'}${f.quasi_public ? '<i class="b-quasi">準公共化</i>' : ''}${vacancyBadge(f)}</div>
     <div class="row"><b>月費</b>　${f.fee_monthly?.toLocaleString() ?? '—'} 元（平均）</div>
     <div class="row"><b>核定床位</b>　${f.beds_approved} 床｜<b>樓層</b> ${f.floor}｜<b>面積</b> ${f.area_m2} ㎡</div>
+    ${f.hours ? `<div class="row"><b>收托時間</b>　${f.hours}${f.night_care ? '　<i class="b-open" style="font-style:normal;font-size:11px;border-radius:4px;padding:1px 6px">夜間托育</i>' : ''}</div>` : ''}
+    ${f.babycare_url ? `<div class="row"><b>官方頁面</b>　<a href="${f.babycare_url}" target="_blank" style="color:var(--primary)">桃園育兒資源網</a>${f.waiting_count != null ? `（候補名單逐筆公開）` : ''}</div>` : ''}
     <div class="row"><b>地址</b>　${f.address}${f.geo_precision === 'street' ? '（地圖位置為街道概略）' : ''}</div>
     <div class="row" style="color:var(--muted);font-size:12px">評鑑結果轉載自桃園市婦幼發展局公告（<a href="https://dowcd.tycg.gov.tw/" target="_blank" style="color:var(--primary)">原文</a>）；本平台不做評分與推薦。資料擷取 2026-08-06。</div>
     <div class="cta">
