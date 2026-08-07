@@ -189,7 +189,7 @@ function render(){
   listArr.forEach(f => document.getElementById('lc-' + f.id).onclick = () => { openCard(f); if (innerWidth < 900) { document.body.classList.remove('showlist'); viewToggle.textContent='☰ 清單'; } map.setView([f.lat,f.lon],16); });
   missShown.forEach(f => document.getElementById('lc-' + f.id).onclick = () => openCard(f));
   count.textContent = (state.night && shown.length === 0)
-    ? '0 家——桃園目前無夜間托育服務（依各機構登載之收托時間）'
+    ? '0 家——有登載收托時間的 48 家皆為日間收托，其餘未登載；夜間托育現況見「關於」頁'
     : `顯示 ${shown.length} 家` + (missShown.length ? `＋${missShown.length} 家位置校正中（見清單）` : '');
 }
 
