@@ -1,5 +1,7 @@
 # 桃園托育地圖（taoyuan-childcare-map）
 
+**Live demo**：<https://keng1304.github.io/taoyuan-childcare-map/>
+
 輸入住家地址，在一張地圖上看到全市合法立案托育資源：評鑑、收費、名額、聯絡方式。
 純靜態、零金鑰、開放資料驅動。白牌設計——其他縣市 fork 後改 `site/config/` 即可複用。
 
@@ -42,6 +44,12 @@ GitHub Pages（Actions workflow）。已知限制：以 OAuth token push 不會�
 
 `vacancy` / `available_from` / `vacancy_source` / `vacancy_updated_at` 四欄位 MVP 一律空值——
 即時空位需要制度配套（機構申報或系統介接），本專案不假裝有。schema 先長對，政策層接上資料不改結構。
+
+## 背景
+
+本專案是「AI 快速產制」工作流的一日 demo：從開放資料盤點到地圖上線共 7.5 小時（194 家機構）。
+完整過程紀錄：[中文](https://www.tzukaoltd.com/blog/ai-rapid-prototyping-policy-demo-case/)｜[English](https://www.tzukaoltd.com/en/blog/one-day-civic-tech-demo-ai-rapid-prototyping/)。
+維護者：[出口影像 Tzukao](https://www.tzukaoltd.com/)。
 
 ## License
 
